@@ -90,15 +90,40 @@ Physical vulnerabilities don't exist in a cloud based network (atleast for Sec+ 
 
 ## 1.3 Hacking Applications
 
-- Priviledge Escalation: Giving an unauthorized user more priviledges (User to Admin priviledges)
-- Cross Site Scripting (XSS): The user of a clean website takes advantage of an improperly configured input, such as a comment section, to implant malicious JavaScript code
+Priviledge Escalation: Giving an unauthorized user more priviledges (User to Admin priviledges)
 
 **Injections**
 
-- SQL
-- DLL
-- LDAP
-- XML
+Injections take advantage of the following computer languages in order to do something malicious via the misuse of user input. 
+
+- SQL (Structured Query Language): SQL is a relational database structure; think of it as Excel spreadsheets. Injecting malicious SQL queries will allow a hacker to delete, change, or add data to that database strucute.
+- DLL (Dynamic Link Library): DLL is shared based code that is used in memory. A malware can rewrite DLLs so that programs that rely on that DLL are maliciously altered. Have you ever wanted to create your own gaming cheat engine? 
+- LDAP (Lightweight Directory Access Protocol): Its like a phonebook for internet users. 
+- XML (Extensible Markup Language): Used for the transmission of data between two points; this data can intercepted and altered with injections.
+- XSS (Cross Site Scripting): The implementation of malicious JavaScript code. JS is the underlying code that runs allows HTML websites to do logical tasks.
+
+- Pointer/ Object Deference: A pointer (AKA the piece of code that tells an OS where to find the rest of the information on a hardrive) can point to the wrong location and cause a crash
+- Directory Traversal: Inspecting directories (AKA the folders on your PC) to plan out a potential attack or espionage
+- Error Handling: The way in which an application handles a error. For example, if the user types a letter where numbers are expected its better for an app to say something like "Error: Passcode may only contain numbers" instead of simply crashing.
+- Impropert Input Handling: The flawed acceptance of incorrect values or formatting. This is what allows injections to happen.
+- Buffer Overflow: When a buffer (or section of memory reserved for a specific purpose) receives too much data that it overflows to other pars of the RAM; and thus corrupting the data in the neighboring buffer.
+- Race Conditions: When two different processes run simultenously, but must finish in specific orders. If the secondary processes finishes their tasks before the expected first process, a problem can occur. A common example of this is Time of Check and Time of Use race conditions. Imagine two people that want to buy the same anime figure on ebay. Suppose that when someone purchases the figure, it will change its status to "Sold"; and it only checks for the availability of the product when its added to checkout cart. If Bob and Albert both have the same figure in their cart, but Bob buys the figure first; Albert might also incorrectly purchase that same figure that in reality is sold out. So what's the race condition here? The check of availibility from Albert races the Purchase (or Use) from Bob. This is why its best practice to have your checks and uses of resources as close as possible. In real life, ebay would have checked the availibility of the anime figure right before purchase instead of when it was placed on the cart, thus minimizing the possibility of a race condition.
+- Replay Attack: Resending legitimate info for a fradulent response. For example, [I clone your car keys using the same signal that your legitimate car keys send to unlock your car.](https://www.youtube.com/watch?v=uxzm_6SYBFo) (PSA. Don't try this at home and also consider buying a Faraday cage.) (but if you do want to hack a car, remember that rolling codes exist and you really need to capture the signal out of reach. See [Spider-man stole that guy's pizza (using a FlipperZero)](https://github.com/Cham0i))
+  - Session Replay: A session ID is reset to a server from a hacker to obtian access to the target's session
+- Integer Overflow: If a number gets too big and does not have access to more bits to represent that number, the value resets back to 0 once the max value is reached.
+
+**Request Forgery**
+- CSRF (Cross site): Using session cookies on a victim's computer to send legitimate requests to a server. (See [this](https://github.com/Cham0i/Cybersec-101?tab=readme-ov-file#html-cookies-and-cross-site-request-forgery-csrf-attacks))
+- SSRF (Server Side): Using HTTP request to query a website's server
+
+- API (Application Programming Interface): API essentially translates code amongst code. A hacker can misuse API to control an app
+- Resource Exhaustion: The overuse of RAM or other component to disrupt a service
+- Memory leak: Unused memory which is not released and thus denied to other apps that may need it
+- SSL Stripping: Taking a victim to the HTTP (as opposed to HTTPS) version of a website. (See [this](https://github.com/Cham0i/Cybersec-101?tab=readme-ov-file#http-vs-https))
+- Driver Manipulation: Using drivers to hack
+  - Shimming: Adding extra inputs to drivers to cause misuse
+  - Refactoring: Adding extra malicious output to drivers
+- Pass the Hash: Old vulnerability where a hash can be used for authentication instead of the password (before its converted to hash)
 
 ## 1.4 Hacking Networks
 
