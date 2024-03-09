@@ -129,23 +129,82 @@ Injections take advantage of the following computer languages in order to do som
 
 **Wireless**
 
+- Evil Twin: Fradulent copycat of a WAP
+- Rouge Access Point: A sketchy WAP. vague SSID, location is odd, sus.
+- BlueSnarfing: Hacker connects to unsecured bluetooth connection for contact, notification, data. etc.
+- BlueJacking: Connecting without pairing/ authentication. This is an old vulnerability, most modern bluetooth devices require pairing.
+- RFID: Radio Frequency Identification. The tech used in NFC
+- NFC: Near Field Communications. Tap to pay. Security Badges.
+- IV: Initialization Vector: Piece of keystream used per session (frame). (Will be explained better some other day)
+- On-Path/ Man-in-the-middle Attack: Routing data through a hacker's machine so that the data is viewed.
+
 **Layer 2 Attacks (Data Link)**
+
+- ARP (Address Resolution Protocol): You should know this by now (See [this](https://github.com/Cham0i/Netacad?tab=readme-ov-file#encapsulation-address-resolution-protocol-arp-mac-address-table-and-routing-tables))
+  - ARP Poisining: Spoofing a fake MAC so that the ARP cache is inaccurate
+  - MAC Flooding: Registering an overwhelming amount of new MACs to the MAC table to force the switch to act as a hub
+  - MAC Cloning: Using someone else's MAC
 
 **DNS**
 
+- Domain Hijacking: Taking control over a domain
+- URL Redirection: Redirecting from a URL to another site
+- DNS Poisining: Adding spoofed DNS cache to be spread by other DNS servers
+- Domain Reputation: Maliciously blacklisting domains can hurt their potential views on the web.
+
 **DDos**
 
+- Distributed Denial of Service: Multiple bots send multiple requests to strain an app, server, network, operational tech, etc.
+
 **Malicious code or script execution**
+
+Powershell, Python, Bash, Macros, VBA, can all change file permissions, NTFS permisions, change IP addresses, names, manipulate files etc. Execution policies, constrained language mode and even the complete deletion of these tools can provide better security.
 
 ## 1.5 Threat vectors, Actors, and intelligence sources
 
 **Actors and Threats**
 
+- APT (Advanced Persistent Threats): Hackers that will always attempt to hack you
+- Insider Threats: Threats within your organization. Either traitors or incompetent people
+- State Actors: Government sponsored hackers (China, Russia, North Korea)
+- Hacktivists: Hackers motivated by politics
+- Script Kiddies: Noob hackers that use other people's scripts
+- Criminal syndicates: Hackers for illegal profits
+- Shadow IT: Unauthorized modifiers of apps and policies
+- Competitors: Business rivals
+
 **Attributes of actors**
+
+1. Internal or External
+2. Sophistication level/ Capabilities
+3. Resources and funding
+4. Intent and motivation
 
 **Vectors (Pathways for entry)**
 
+- Direct Access: Coming through the router
+- Wireless: WAP, Bluetooth, cell
+- Email
+- Supply Chain Attack
+- Social Media (Social Engineering)
+- Removable Media (Bad USB)
+- Cloud
+
 **Threat Intelligence Sources**
+
+- OSINT (Open Source Intelligence): Free, public, information
+- Closed/ Proprietary: Paid, closed off from the general public
+- Vulnerability databases: Databases of known vulnerabilities
+
+ISAC (Information Sharing and Analysis Center) Established after 9/11. ISAC ensures that public and private forums communicate with each other using AIS (Automated Indicator Sharing).
+
+Darkweb: The .onion sites. Illegal activity.
+
+- IoCs (Indicators of Compromise): Evidence to believe a hack occured
+- STIX/ TAXII: DHS specifications for cybersecurity sharing
+- Predictive Analysis: Anticipation of incident, often using AI to guess hardware failures or network overload.
+- Threat Maps: Geographic representations of past attacks
+- File/ Code repositories: Storage area for data/ code (Hello, you currently viewing this repository for Sec+ right now)
 
 **Research Sources**
 
