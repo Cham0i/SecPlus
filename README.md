@@ -208,16 +208,110 @@ Darkweb: The .onion sites. Illegal activity.
 
 **Research Sources**
 
+- Vendor Websites: Website of product's vendor (Dell, Apple, Cisco, etc.)
+- Vulnerability Feeds: Newsletters, RSS Feeds, Content creators, etc.
+- Conferences: DEFCON, Blackhat, etc.
+- Academic Journals: Often theoretical without practibility. College
+- Request For Comment (RFC): ARPANET Documents by the IETF, IRTF and IAB rfc-editor.org
+- Local Industrial Groups: issa.org Based on industry
+- Social Media: Reddit, twitter, youtube.etc
+- Threat Feeds: Real time data streams recognizing threats
+- Advesary Tactics, Techniques, and Procedures (TTP): The actions of threat actors to gain access. Goal (Tactic) How (Technique) specific way/ variables (procedures)
+
 ## 1.6 Security Concerns with various types of vulnerabilities
+
+Cloud vs on-premise. Cloud doesn't have phyiscal vulnerabilities (for purposes of the test).
+
+Zero Day: Vulnerability that was previously unknown. Comes from the fact that the vulnerability was present on day zero.
+
+**Weak Configurations**
+
+1) Open permissions
+2) Errors
+3) Unsecure Protocols
+4) Unsecure Root Accounts
+5) Weak Encryption
+6) Default Settings
+7) Open Ports and Services
+
+**Third Part Risks**
+
+- Vender Management: Vendor negotiating, contracts, termination
+- System integration: Merging organization increases attack surface
+- Lack of vendor support: Not communicating or providing EOL and EOSL
+- Outsourced code developement: Doesn't known 100% what is inside code if made elsewhere
+- Data Storage: Ensure 3rd party keeps your data secure
+- Impropert/ Weak path management: Centralize the patches and test them before deploying to the network
+- Lagacy Platforms: EOSL doesnt get security updates
+
+Impacts the following:
+
+1) Financial. In the form of delayed sales, overtime, fines, quantitive loss of money
+2) Reputation. Data Breach = Your security sucks
+3) Availibility loss. Unavailible data
+4) Data Loss (gone/deleted) Data Breach (viewed by unauthorized people) or Data exfiltration (stolen data)
+
+Identity theft: Impersination with documents
 
 ## 1.7 Techniques used in security assesments
 
+- Threat Hunting: Actively locating and mitigating cyber attacks
+- Intelligence Fusion: The good guys should share data
+- Threat feeds: RSS Feeds, podcasts, blogs, etc
+- Advisories and Bulletins: Announcement by organizations
+- Manuever between these different techniques??????
+
+**Vulnerability Scans**
+
+- False hit, True hit, positive, negative matrix (Incorrect, Correct, Threat, Nonthreat)
+- Log Reviews: Looking for signs of attack using logs
+- Credentialed vs not: Valid authentication (admin priv.)
+- intrusive vs non: Affects perfomance, may restart as opposed to background scan
+- CVE/CVSS: Databases and scoring of vulnerabilities (SolarWinds, Net.Configuration Manager)
+
+**Security Information and Event Manager (SIEM)**
+
+A unified collection of data for real time analysis.
+
+- Review Reports: Results of success rate of SIEM/time period
+- Packet Capture: Collecting packets of data
+- Data Input: Data that goes into SIEM such as
+  - Log Collectors: Tools for recording network events and SNMP inputs
+  - User Behaiviour: How users behave (Login times)
+  - Sentiment Analysis: What people are discussing (Bomb threats?)
+  - Security Monitoring: Watch and record network activity
+  - Log Aggregation: Oraganized labeling and collection of logs
+- Security Orchestration, Automation and Response (SOAR): Toolset to react to threats. Think of it as a playbook (automated) runbook (conditional)
+
 ## 1.8 Pentesting techniques
+
+- Known (white) Unknown (black) partial (gray box) enviroments
+- Rules of Engagement: How, what, when pentesters can do within availible network
+- Lateral Movement: Actions within avalible network to gain deeper access
+- Persistence: Perpetual access (backdoor)
+- Priviledge Escalation: Gaining deeper access
+- Clean up: Deleting logs, folders, registries, etc to avoid detection that a pentester was present
+- Bug Bounty: Payment for discovery and report of vulnerabilities
+- Pivoting (PC to Router to Target PC, etc.)
+
+**Passive and Active Recon**
+
+War [anything] Searching for wireless networkds. Footprinting is collecting as much info on the target.
+
+**Exercise and Types**
+
+Red (ATTCK) Blue (DEF) White (Referees) Purple (ATTK and DEF/ Coach coms)
 
 ### 2.0 ARCHITECTURE AND DESIGN
 
 ## 2.1 Security Concepts in enterprise enviroments
 
-Will he finish uploading all of his old sec+ notes to his github? Find out in the next episode of Dragon Ball Z
+**Configuration Management**
 
-R.I.P Mexico
+- Diagrams: Physical hardawre location
+- Baseline Configuration: Baseline Performance
+- Standard Naming Conventions (EXAMPLE: FS3-E4 = File Server 3 on East Building 4)
+- IP Schema (Like using the first availible IP for router. .2-.10 for switches, etc.
+- Data Sovereignty: Under which government is data under the jurisdiction of?
+
+**Data Protection**
