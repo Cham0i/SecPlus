@@ -315,3 +315,48 @@ Red (ATTCK) Blue (DEF) White (Referees) Purple (ATTK and DEF/ Coach coms)
 - Data Sovereignty: Under which government is data under the jurisdiction of?
 
 **Data Protection**
+
+- Data Loss Protection (DLP): USB Blocking, backup verification, data monitoring, etc
+- Masking: (xxx) xxx-1234
+- Tokenization: Patient # or random number or string that is tied to sensitive information elsewhere. Student IDs
+- Digital Rights Management (DRM): Stop pirating and easy copying
+- Geographical considerations: Legal jurisdiction, threats, lag
+- Response and Recovery Controls: The thing ControlIncidentResponce people do
+- SSL/ TLS Inspection: Grabing, decyphering and reencrypting packets
+- Hashing: Integrity check using asymetric key encryption
+- API considerations: Don't trust 3rd party code
+
+**Site Resiliency**
+
+- Hot: Basically the main site
+- Warm: Has some utilities, old hardware, insufficient amount for maximum productivity
+- Cold: No or few utilities, only servers, open space mostly
+
+**Deception and Disruption**
+
+- Honeyfile: Bait for attackers to click on. Sends alarm to defense team
+- HoneyPot: Machine bait for attackers to access
+- Honeynet: Entire net designed for bait away from real network
+- Fake telemetry: Fake serverloads, RAM consumption, etc.
+- DNS sinkholes: DNS server that ignores requests for known malicious websites
+
+## 2.2 Virtualization and Cloud Computing concepts
+
+**Cloud Models**
+
+- Infastructure as a service: Azure, AWS
+- Platform as a service: Web app server, database server, etc.
+- Software as a service: Apps like Google Drive, docs, excel, etc
+- Anything as a service (Xaas): Monitoring (Maas) Desktop (Daas)
+- Public Cloud: Azure AWS, etc
+- Hybrid: Combination of any of the above. DMZ reasons
+- Managed Service Provider/ Security Provider (MSP/MSSP): Offshored IT/Sec and monitoring usually by CSP
+- Fog Computing: Local processing. Pre-sync
+- Edge Computing: Local processing and data sotrage (normal net)
+- Containers/ App Cells: allow cloud usage of apps
+- Microservices/ API: Distributed cloud cloud code; such as user logins, database, Xaas,; tiny cloud services
+- Infastructure as Code: Use preset definition files as opposed to being manually set up
+- Software Defined Network (SDN): Centralized routing and switching configurations
+- Software Defined Visibility (SDV): Centralized viewing of network devices
+- Serverless Architecture: CSP provides services directly to endpoint (AWS Lambda)
+- Service Integration: Combining all cloud services into a single source (or just use one CSP).
