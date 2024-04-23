@@ -360,3 +360,75 @@ Red (ATTCK) Blue (DEF) White (Referees) Purple (ATTK and DEF/ Coach coms)
 - Software Defined Visibility (SDV): Centralized viewing of network devices
 - Serverless Architecture: CSP provides services directly to endpoint (AWS Lambda)
 - Service Integration: Combining all cloud services into a single source (or just use one CSP).
+- Resource Policies: Permissions given to a resource
+- Transit Gateway: On-premise to cloud gateway (VPN)
+- VM Sprwal avoidance: Limit permissions to create VMs, enact policies, monitor, keep good inventory, audit
+- VM Escape Protection: Same as physical machine (harden, snapshots, sandbox, test, scan, etc.)
+
+## 2.3 Secure App development, deployment and automation
+
+**Enviroment (Dev)**
+
+- Resource vs Security (more code = more bugs)
+- Scalibilitiy (Meeting increased demand)
+- Elasticity (Scale up or down as demand changes)
+- SDK (JavaOKD, .NET) vs APIs
+
+**Testing**
+
+Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
+
+[REDO THIS SECTION]
+
+**Secure Coding Techniques**
+
+- Normalization: Store and organize data so its not rpreated unnecessarly
+- Stored procedures: Custom code for custome query format to avoid injections
+- Obfuscation/ camoflage: Difficult to read code, but not encrypted ( to avoid lag) JS minifying
+- Code Reuse/ Dead code: Use SDK and libraries to get rid of code that does nothing
+- Data Exposure/ encryption: Use HTTPS, AES, or attempt obfuscation/ camoflage (see above)
+- Open Web Application Security Project (OWASP.org)
+- Software Diversity: Different executables for same process to confuse hackers
+
+**Automation/ Scripting (Things done automatically)**
+
+- Continous monitoring: Monitor functioning of application itself
+- Continous Validation: Code running as expected
+- Continous Integration: Different parts are working together properly
+- Continous Delivery: Deploy latest version to customers
+- Continous Deployment: Process that make continous delivery happen (AKA automatic updates)
+- Version Control: Management of changes
+
+## 2.4 Authentication and Authorization concepts
+
+- Directory: A network with a Domain Controler and its respective Client Computers
+- Federation: Essentially Active Directories' Forest. Its made up of multiple Directories. Can access other directory using your directories credentials
+- Attestation: Hardware use for verfication
+
+**Technologies**
+
+- Time-Based One Time Password (TOTP): Changes password every couple of seconds. Requires synconization of keys and lock
+- HOTP: HMAC uses hasj counter to generate a new key each time a key is used to unlock. U2F key
+- Token Key: 3rd Party password generator that syncs key with lock phyiscal (U2F) software (QR, Authentication Apps)
+- Static Code: PIN codes (dont' change)
+- Smart Card Authentication: NFC card, magnetic strip
+- Personal Identity Verification Card (PIV): Essentially a smart card with an ID (CAC)
+
+**Biometrics**
+
+- Fingerprint ($cheap$), Retina/Iris ($$Expensive$$), Facial (Uses infrared tech), vain matching (accurate), voice (inaccurate), gait analysis (AKA walking analysis. its 75% accurate)
+- False Rejection Rate (Type 1 error), False Acceptance Rate (Type 2 error), and Crossover Error Rate (sweet spot).
+
+[ADD GRAPH]
+
+**Multifactor Authentication (MFA)**
+
+- Factors: Known (password), Have (Physical key), Are (biometrics)
+- Attributes: Somewhere you are (office, geofencing), something you can do (action, gestures, pattern), someone you know, something you exhibit (neurological, as in speech)
+
+## 2.5 Implement Cybersecurity Resilience
+
+- Geographical Dispersal: Synced copies around the world to avoid natural disasters or "peacefull protests"
+- Redundant Array of Independant Disks
+
+[EXPLAIN RAID 1, 0, 10, 5, 6 and Parity using XOR]
