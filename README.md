@@ -1,6 +1,6 @@
-CompTIA Sec + is a memory test. The concepts are really easy, too easy some might say, but you need to know the correct termanology in order to pass this test.
+Hello. Use this to learn and practise for your CompTIA Security + exam.
 
-1) THREATS, ATTACKS AND VULNERABILITIES
+1) [THREATS, ATTACKS AND VULNERABILITIES](https://github.com/Cham0i/SecPlus/blob/main/README.md#1-threats-attacks-and-vulnerabilities)
    - 1.1 Types of Social Engineering Techniques
    - 1.2 Types of Attacks
    - 1.3 Application Attacks
@@ -9,7 +9,7 @@ CompTIA Sec + is a memory test. The concepts are really easy, too easy some migh
    - 1.6 Vulnerabilities
    - 1.7 Techniques used in Security Assesments
    - 1.8 Techniques used in Penetration Testing
-2) ARCHITECTURE AND DESIGN
+2) [ARCHITECTURE AND DESIGN](https://github.com/Cham0i/SecPlus/blob/main/README.md#1-threats-attacks-and-vulnerabilities)
    - 2.1 Security Concepts in an Enterpise Enviroment
    - 2.2 Virtualization and Cloud Computing Concepts
    - 2.3 Secure Application Development, Deployment, and Automation Concepts
@@ -18,7 +18,7 @@ CompTIA Sec + is a memory test. The concepts are really easy, too easy some migh
    - 2.6 Security Implications of Embedded and Specialized Systems
    - 2.7 Physical Security Controls
    - 2.8 Cryptographic Concepts
-3) IMPLEMENTATION
+3) [IMPLEMENTATION](https://github.com/Cham0i/SecPlus/blob/main/README.md#1-threats-attacks-and-vulnerabilities)
    - 3.1 Secure Protocols
    - 3.2 Host or Application Security Solutions
    - 3.3 Secure Network Designs
@@ -28,10 +28,12 @@ CompTIA Sec + is a memory test. The concepts are really easy, too easy some migh
    - 3.7 Identity and Account Management Controls
    - 3.8 Authentication and Authorization Solutions
    - 3.9 Public Key Infastructure
-4) OPERATIONS AND INCIDENT RESPONSE
-   - 
-5) GOVERNANCE, RISK AND COMPLIENCE
-   -
+4) [OPERATIONS AND INCIDENT RESPONSE]()
+   - Will be added soon
+   - I promise
+5) [GOVERNANCE, RISK AND COMPLIENCE]()
+   - Same with
+   - this one...
 
 
 # 1 THREATS, ATTACKS AND VULNERABILITIES
