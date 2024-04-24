@@ -432,3 +432,33 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 - Redundant Array of Independant Disks
 
 [EXPLAIN RAID 1, 0, 10, 5, 6 and Parity using XOR]
+
+- Multipath: More than one way of accessing data
+- Load Balancers: Provide efficient division of loads. Helps with peak demand resource exhaustion.
+- NIC Teaming: Multiple NICs per machine to ensure connectivity if one fails
+- Uninterruptable Power Supply (UPS): Emergency battery provides enough power to safely shut down
+- Power Distribution Units (PDU): Power strips but smart
+- Storage Area Network (SAN): Centralized storage that is detached from any one machine client. Cloud
+- Master Image: OS Image that all other VMs copy/ patch from
+
+**Backup Types**
+
+- Full (whole) Incremental (Changes from last) Differential (All changes from previous full save??)
+- Tape: Magnetic strip
+- Disk: Magnetic disk
+- Network Attached Storage (NAS): Centralized storage that is attached to LAN and shared locally
+
+## 2.6 Security Implications of Embedded and Special System
+
+- Raspberry Pi: SoC, DNS Pihole, VPN, etc
+- Field Programmable Gate Array (FPGA): ICs reprogrammable for hardware corrections
+- Arduino: For robotics
+- Supervisory Control and Data Aquisition (SCADA/ICS): For utilities, HVAC, industrial control systems, etc
+- Internet of Things (IoT): Smart devices, wearables with sensorts, multifunction devices. These devices' default settings typically aim for ease of use rather than security
+- Facility Automation: Heating and cooling automation
+
+**Specialized**
+
+- Medical Systems: HIPPA and "wireless injuries"
+- Vehicles: Bluetooth, wifi, cell vulnerabilites
+- 
