@@ -522,6 +522,8 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 - Steganography: Hiding data in other data (audio, video, image)
 - Homomorphic Encryption: Modifying encrpyted data which applies its changes once decrpyted
 
+[USE DIAGRAMS HERE]
+
 Common use cases 
 
 - For low power consumption use ECC
@@ -540,3 +542,61 @@ Longevity; as in how long a system is secure given current tech ($quantummmmm$) 
 
 ## 3.1 Implement Secure Protocols
 
+- DNSSEC: Digitally signs every zone file for every domain in DNS to prevent cache poisining
+- SSH: Replaced Telnet as a secure way to send commands to remote machines (Port 22)
+- S/MINE: Encrypts email attachments (Port ??)
+- SRTP: Voice and audio encryption (UDP 5004)
+- SFTP (FTP + SSH): Encrypted file upload and download (Port 22)
+- SFTPS (FTP + SSL/TLS): Same as above but using public-private key encryption of SSL/TLS (TCP 990)
+- LDAPS: Allows already authenticated directory users to browse and locate objects (TCP 636)
+- SNMPv3: Device monitoring (UDP 161 and 162)
+- HTTPS (HTTP + SSL/TLS): (TCP 443)
+- IPSec: Authentication and encryption for IP
+  - Authentication Header (AH): Integrity and authentication
+  - Encapsulating Security Protocol (ESP): Encryption
+  - Tunnel/ Transport: Tunnel mode doesn't use AH but does encrypt using ESP (because some devices can't read AH).
+- POP: Receives email and promptly deletes it off the server once it's downloaded from it
+- IMAP: Receives email, but keeps a original copy of the email in the server. Also supports multiple connections (TCP 143)
+- NTP: Network Time Protocol is the time sync protocol
+
+## 3.2 Host or application security solutions
+
+**Endpoint protection**
+
+The Following are present in most NGFW:
+
+- Antivirus
+- Antimalware
+- Host firewall
+- Data Loss Prevention (DLP)
+- Host Intrusion Detection System (HIDS)
+- Host Intrusion Prevention System (HIPS)
+- Detect and Response (EDR)
+
+**Boot Integrity**
+
+- UEFI: Secure Boot
+  - Boot attestation: Report to remote trusted system
+  - Measured Boot: Verify integrity of bootfiles over a network (win10) stops root kits
+Databases can salt, tokenize, and hash data
+
+**Application Security**
+
+- Input Validation: Rejects possible injections
+- Secure cookies: Cookies that deny sending info unless they are secured
+- HTTP Headers: Provide browser with critical information
+- Code Signing: Integrity signature on code
+- Firewall
+- Static Code Analysis (IDE)
+- Fuzzing: Input testing
+- Dynamic code analysis: IDE but done live
+- Hardening: Close unused ports, disk encryption, OS patches, lock access to harmfull registries, password for admin/root access
+- Self Encrypted Drive (SED) or...
+- Full Disk Encryption (FDE)
+- Hardware root of trust
+- Sandboxing
+- Trusted Platform Module (TPM)
+
+## 3.3 Secure Network Designs
+
+- Load Balencing: Efficient workload share
