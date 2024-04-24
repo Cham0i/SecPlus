@@ -513,3 +513,30 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 - Electronic Code Book (ECB): 64 bit plain directly to cyphertext. Identical ciphertext will have identical messages
 - Cipher Block Chaining (CBC): Encryption has to be sequential. One chain error can corrupt the rest of the data.
 - Counter Mode (CTR): using nounce/ counter. Uses XOR to decrpyt?
+- Authentication Encryption (AE): Encrypts message and authenticates it
+- Blockchain: Uses public ledger as a decentralized way to record transactions within the blockchain of computers using the crypto currency
+- Cipher Suites: Group of algorithms used to secure connections
+- Stream: Bit-by-bit encryption
+- Block: Chunks of bits encryption
+- Symmetric (one key) vs Asymetric (public and private key)
+- Steganography: Hiding data in other data (audio, video, image)
+- Homomorphic Encryption: Modifying encrpyted data which applies its changes once decrpyted
+
+Common use cases 
+
+- For low power consumption use ECC
+- For low latency use Symmetric cryptography
+- For high resilience use AES (until quantum makes its global debut)
+
+The best cryptosystem makes data obfuscating (unclear) with integrity (no change), authentication (correct source) checking features and...
+- Non repudiation: Inability to deny action (used private key to sign)
+- Confidentiality: Only intended viewer can view
+
+Limitations:
+
+Longevity; as in how long a system is secure given current tech ($quantummmmm$) Entropy; the pseudorandomness of a number
+
+### 3.0 Implementation
+
+## 3.1 Implement Secure Protocols
+
