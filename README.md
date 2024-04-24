@@ -461,4 +461,55 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 
 - Medical Systems: HIPPA and "wireless injuries"
 - Vehicles: Bluetooth, wifi, cell vulnerabilites
-- 
+- Aircraft and Drones: (UAV, autopilot, embedded cameras, wifi)
+- Smart Meter: Monitoring of water, electricity,etc
+- Surveilance System: SoC, cell, wifi, cloud storage privacy concerns
+- Voice over IP (VOIP): Dos, spoofing, harrasment
+- Mobile System: IoC vulnerabilities keep updated
+- Real Time OS (RTOS): Responds to input in real time
+
+**Communication Considerations**
+
+- 5G: cell
+- Narrowband (NBIoT) Only 200khz band. Max battery life
+- Zigbee: low power radio providing personal network
+- Baseband Radio: Near 0 frequency radio
+
+## 2.7 Physical security controls
+
+- Barricades
+- Alarms
+- Badges
+- Cameras (motion, object detection)
+- Access Control Vestibules (manholes and mantraps)
+- CCTV + industrial camoflage (AKA hide them)
+- Robot Sentries
+- Human Guards
+- Reception with sign in procedure
+- Two-person integrity/ control
+- Locks (bio, electric, physical, cable)
+- USB data blocker
+- Good lighting
+- Fencing
+- Faraday Cages
+- Air Gap (physical seperation of secure and unsecure networks)
+- Screened subnet/ DMZ
+- Hot/ cold aisles (good airflow???)
+- Burning, shredding, pulping (soak in water to recycle), pulzerizing (smash), degaussing (electromagnetic wiping), 3rd party (software DBAN, Hillary Clinton used BleachBit)
+
+## 2.8 Basic Cryptographic Concepts
+
+- Digital Signatures: AES from both client and host
+- Key length/ size: # of bits
+- Key stretching: Using key derivations functions that slow down deriviations (PBKDF2, bcrypt)
+- Salting: Adding extra string to plain password. The salt value also has to be stored by system
+- Hashing: Value that represents integrity
+- Key Exchange: In symetric encryption a key can be exchange in-band (using same communications as message) or out of band (in person [USB] or independant channels)
+- Elliptic: Curve cryptography??? (ECC) Asymetric, low resource cost, used in phones. Still fairly hard to crack.
+- Perfect Foward secrecy: Use a key only once so that its hash isn't found elsewhere
+- Quantum Cryptography: Using qubits (0, 1, and superposition) a quantum computer could crack any encryption up to date. While the theory is sound, its implementation has yet to be widespread. Fun fact: The FBI stores many encrypted messages from bad guys in hopes that they may be decrypted once quantum decryption arrives. New post-quantum crpytography will have to be developed for public use to withstand quantum decrpytion.
+- Ephemeral: Temporary key used once (session key?)
+- Modes of operation: DES uses 5 blocks
+- Electronic Code Book (ECB): 64 bit plain directly to cyphertext. Identical ciphertext will have identical messages
+- Cipher Block Chaining (CBC): Encryption has to be sequential. One chain error can corrupt the rest of the data.
+- Counter Mode (CTR): using nounce/ counter. Uses XOR to decrpyt?
