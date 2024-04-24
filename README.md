@@ -599,4 +599,69 @@ Databases can salt, tokenize, and hash data
 
 ## 3.3 Secure Network Designs
 
-- Load Balencing: Efficient workload share
+- Load Balencing: Efficient workload share. active/active; which splits the workload. active/passive; where one server takes the majority of the workload and the other takes the excess.
+- Scheduling: Which devices gets the request
+- Virtual IP: IP of load balancer. Like public IP???
+- Persistance: Service always availble
+
+**Network Segmentation**
+
+VLAN segmentation to organize and avoid lateral movement
+- DMZ/ screened subnet
+- East west traffic: Server to server within LAN
+- North South traffic: Internet leaves LAN
+- Intranet: Local LAN
+- Extranet: Local LAN with external access to LAN for customers, clients, students, etc.
+- Internet: WorldWideWeb. Everyone
+- Zero Trust: Exclude traffic untill its verified or health checked
+
+
+VPN segmentation
+- Always-on: VPN concentrators for remote of site-to-site access
+- Split Tunnel (only LAN traffic) vs Full tunnel (from another company LAN)
+- Remote (outside company LAN) vs Site-to-site (from another company LAN)??
+- L2TP: Microsoft and Cisco product. Slowly being replaced by IPSec, SSL/TLS VPNs.
+
+DNS Segmentation
+- Network Access Control (NAC): Prohibits connection to join network untill health check or verification
+- Agent-based: Battleye, anticheat, any other fine tunned monitoring
+- Out-of-band Management: Admin access to downed server, offline access, AUX and Console
+
+**Port Security**
+
+- Broadcast Storm Prevention: DDos flood guard
+- BPDU Guard: Protects from accidental routing loops
+- DHCP snooping: Blocks any other DHCP server not in the whitelist
+
+**Network Applianeces**
+
+- Jump server: Used in DMZ
+- Foward Proxy: Outward traffic. Used often to regulate content monitoring
+- NIDS and HIPS: Detection (passive) and Active (inline) control. Respectively
+- Detection Types:
+  - Signature; Database of known patterns
+  - Rule; Ruleset, policy threshold
+  - Heuristic; Signature + Rule combination. Creates rules based on a signature for that specific server
+- Hardware Security Module (HSM): Hardware specific to reduce cryptography processsing
+- Sensor: Monitors packets in NIDS/ HIPS
+- Collectors/ Aggregator: Takes in data
+
+**Firewalls**
+
+- Web Application Firewall (WAF): Dedicated hardware box
+  - Statefull; group
+  - stateless; packet per packet
+- Unified Threat Management (UTM): Multiple security application and devices
+- NAT Gateway: Gives private IP to devices under single public IP
+- Content/ RL Filter: Content URL block
+- Host; Software on workstation vs. Virtual; within VM
+- Access Control List (ACL): Criteria/ rules for a firewall. Discriminates on IP, port, time, etc.
+- Route Security: Routers must be trustworthy
+- Quality of Service (QoS): Bandwidth maximum or minimum on certain protocols???
+- IPv6: Consider a NGFW for IPv6 Firewalls
+- Port mirroring/ spanning: Monitors data fo copying passive data (in n out)
+- Network Tap/ Port tap: Steals some packets to test them
+- Monitoring services: Baseline to real-time monitoring
+- File Integrity Monitors (FIM): ?:???
+
+## 3.4 Wireless Security Settings
