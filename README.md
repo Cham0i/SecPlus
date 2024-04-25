@@ -703,3 +703,8 @@ DNS Segmentation
 - File Integrity Monitors (FIM): ?:???
 
 ## 3.4 Wireless Security Settings
+
+- WPA2: AES, 8-63 characters, pre-shared key
+- WPA3: same, but diffie-hellman
+- Counter Mode Cipther Block Protocol (CCMP): 128 bit key and 128 block size. 48 bit IV? (initialization vector???)
+- Simultaneous Auth
