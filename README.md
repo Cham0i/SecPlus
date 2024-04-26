@@ -202,21 +202,21 @@ Powershell, Python, Bash, Macros, VBA, can all change file permissions, NTFS per
 
 **Actors and Threats**
 
-- Advanced Persistent Threats (APT): Hackers that will always attempt to hack you
-- Insider Threats: Threats within your organization. Either traitors or incompetent people
-- State Actors: Government sponsored hackers (China, Russia, North Korea)
-- Hacktivists: Hackers motivated by politics
-- Script Kiddies: Noob hackers that use other people's scripts
-- Criminal syndicates: Hackers for illegal profits
-- Shadow IT: Unauthorized modifiers of apps and policies
-- Competitors: Business rivals
+- Advanced Persistent Threats (APT): Hackers that will always attempt to hack you. "The opps that are always around the block"
+- Insider Threats: Threats within your organization. Either traitors or incompetent people (like Dave, the guy that set up that Rouge Access Point without your permission... what a jerk...)
+- State Actors: Government sponsored hackers (China, Russia, North Korea, and yours truly)
+- Hacktivists: Hackers motivated by politics [Wake the fuck up, Samurai...](https://youtu.be/bN1tW2o23Qk?si=Ld851BTIqXFhjiji)
+- Script Kiddies: Noob hackers that use other people's scripts to hack. They probably don't have a deep understand of what is going on underneath the hood with the code they utilize. 
+- Criminal syndicates: Hackers for illegal profits. Fun fact: hackers target your medical records more often than your actual financial accounts.
+- Shadow IT: Unauthorized modifiers of application or policies. (Akin to how the lizard people control the U.S government)
+- Competitors: Business rivals (Arasaka vs Militech in Cyberpunk)
 
 **Attributes of actors**
 
-1. Internal or External
-2. Sophistication level/ Capabilities
-3. Resources and funding
-4. Intent and motivation
+1. Internal or External (Is it Dave, from sales department, or is it a hacker from Russia?)
+2. Sophistication level/ Capabilities (Is he a script kiddie or motherfucking Aiden Pearce?) 
+3. Resources and funding (Does he have a single laptop to attack you or a gigantic botnet?)
+4. Intent and motivation (but why?)
 
 **Vectors (Pathways for entry)**
 
@@ -230,26 +230,26 @@ Powershell, Python, Bash, Macros, VBA, can all change file permissions, NTFS per
 
 **Threat Intelligence Sources**
 
-- OSINT (Open Source Intelligence): Free, public, information
+- Open Source Intelligence (OSINT): Free, public, information. [Here is a list of various OSINT tools you can try out](https://osintframework.com/) You probably won't know how to use any of them...patience young padawan (look up youtube tutorials)
 - Closed/ Proprietary: Paid, closed off from the general public
-- Vulnerability databases: Databases of known vulnerabilities
+- Vulnerability databases: Databases of known vulnerabilities 
 
-ISAC (Information Sharing and Analysis Center) Established after 9/11. ISAC ensures that public and private forums communicate with each other using AIS (Automated Indicator Sharing).
+Information Sharing and Analysis Center (ISAC): Established after 9/11. ISAC ensures that public and private forums communicate with each other using Automated Indicator Sharing (AIS).
 
-Darkweb: The .onion sites. Illegal activity.
+Darkweb: The .onion sites. Illegal activity sometimes, but mostly FBI honey pots pretending to be illegal websites.
 
-- IoCs (Indicators of Compromise): Evidence to believe a hack occured
+- Indicators of Compromise (IoCs): Evidence to believe a hack occured
 - STIX/ TAXII: DHS specifications for cybersecurity sharing
 - Predictive Analysis: Anticipation of incident, often using AI to guess hardware failures or network overload.
 - Threat Maps: Geographic representations of past attacks
-- File/ Code repositories: Storage area for data/ code (Hello, you currently viewing this repository for Sec+ right now)
+- File/ Code repositories: Storage area for data/ code (Hello, you are currently viewing this repository for Sec+ right now)
 
 **Research Sources**
 
 - Vendor Websites: Website of product's vendor (Dell, Apple, Cisco, etc.)
 - Vulnerability Feeds: Newsletters, RSS Feeds, Content creators, etc.
 - Conferences: DEFCON, Blackhat, etc.
-- Academic Journals: Often theoretical without practibility. College
+- Academic Journals: Often theoretical without practibility. College papers.
 - Request For Comment (RFC): ARPANET Documents by the IETF, IRTF and IAB rfc-editor.org
 - Local Industrial Groups: issa.org Based on industry
 - Social Media: Reddit, twitter, youtube.etc
@@ -258,9 +258,9 @@ Darkweb: The .onion sites. Illegal activity.
 
 ## 1.6 Security Concerns with various types of vulnerabilities
 
-Cloud vs on-premise. Cloud doesn't have phyiscal vulnerabilities (for purposes of the test).
+Cloud vs on-premise. Cloud doesn't have phyiscal vulnerabilities (for purposes of the Sec+ test).
 
-Zero Day: Vulnerability that was previously unknown. Comes from the fact that the vulnerability was present on day zero.
+Zero Day: Vulnerability that was previously unknown upon release. Comes from the fact that the vulnerability was present on day zero.
 
 **Weak Configurations**
 
@@ -276,7 +276,7 @@ Zero Day: Vulnerability that was previously unknown. Comes from the fact that th
 
 - Vender Management: Vendor negotiating, contracts, termination
 - System integration: Merging organization increases attack surface
-- Lack of vendor support: Not communicating or providing EOL and EOSL
+- Lack of vendor support: Not communicating or providing End of Life (EOL) and EOSL
 - Outsourced code developement: Doesn't known 100% what is inside code if made elsewhere
 - Data Storage: Ensure 3rd party keeps your data secure
 - Impropert/ Weak path management: Centralize the patches and test them before deploying to the network
