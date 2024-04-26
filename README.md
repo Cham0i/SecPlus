@@ -1,5 +1,9 @@
 Hello. Use this to learn and practise for your CompTIA Security + exam.
 
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/goal.jpg)
+
+# CompTIA Security+ Objectives
+
 1) [THREATS, ATTACKS AND VULNERABILITIES](https://github.com/Cham0i/SecPlus/blob/main/README.md#1-threats-attacks-and-vulnerabilities)
    - 1.1 Types of Social Engineering Techniques
    - 1.2 Types of Attacks
@@ -214,9 +218,11 @@ Powershell, Python, Bash, Macros, VBA, can all change file permissions, NTFS per
 **Attributes of actors**
 
 1. Internal or External (Is it Dave, from sales department, or is it a hacker from Russia?)
-2. Sophistication level/ Capabilities (Is he a script kiddie or motherfucking Aiden Pearce?) 
+2. Sophistication level/ Capabilities (Is he a script kiddie or motherfucking Aiden Pearce?)
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/sophistication_meme.jpg)
 3. Resources and funding (Does he have a single laptop to attack you or a gigantic botnet?)
-4. Intent and motivation (but why?)
+4. Intent and motivation
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/why.jpg)
 
 **Vectors (Pathways for entry)**
 
