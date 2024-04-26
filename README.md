@@ -66,7 +66,7 @@ Hello. Use this to learn and practise for your CompTIA Security + exam.
 - Impersonation: Pretending to be someone else (See "Catch me if you can" the 2002 movie)
 - Watering Hole Attack: Legitimate website that target victim visits often which is infected with malware by hacker
 - Typosquatting/ URL Hijacking: Making a URL similar to a legitimate website to trick a victim into a fake website. For example, Amazon.com vs Amaz0n.com
-- Pre-texting: Formulating a fake scenario to trick a target into thinking a request is legitimate, or gain sympathy to bend rules. [Example](https://youtu.be/lc7scxvKQOo?si=9eP6g3n60LvsQP1m&t=47)
+- Pre-texting: Formulating a fake scenario to trick a target into thinking a request is legitimate, or gain sympathy to bend rules. [Watch this hacker pretend to be the target's wife](https://youtu.be/lc7scxvKQOo?si=9eP6g3n60LvsQP1m&t=47)
 
 Influence Campaigns use hybrid warefare, which is the use of politics, culture, social media, cyberspace, etc. in war
 
@@ -82,7 +82,7 @@ Influence Campaigns use hybrid warefare, which is the use of politics, culture, 
 
 ## 1.2 Malware Types
 
-- Ransomware: The encrpytion of a victims files which the hacker promises to decrypt once the ransom is payed. Well atleast according to the hackers...(PSA. Never give them money. Always have backups)
+- Ransomware: The encrpytion of a victims files which the hacker promises to decrypt once the ransom is payed. Well atleast according to the hackers...(PSA. Never give them money. Always have backups for this reason)
 - Trojans: Software that a victim wants and installs with hidden malware
   - RAT (Remote Access Trojan): A trojan which includes some sort of spyware or remote access to the victim's computer
 - Virus: Malware that requires user action to spread
@@ -100,42 +100,42 @@ Influence Campaigns use hybrid warefare, which is the use of politics, culture, 
 **Password Attacks**
 
 - Spraying: Trying one password for multiple accounts. It helps a hacker avoid being locked out of any one account. For example, guessing "Password123" for Jenny's, Robert's, and Jose's account. One of them has to be stupid...
-- Dictionary attack: Using commonly used words or phrases to guess passwords. [See example here](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)
+- Dictionary attack: Using commonly used words or phrases to guess passwords. [Here is a list of the most commonly used passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)
 - Brute Force: Trying a myriad of keys until a password is randomly guessed. This attack is easily countered by enabling a max number of password attempts within a given time frame. (This is only feasable for keys of up to 128 bits. Any password longer than 256 bits would take 14 billion years for any computer to guess)
-- Rainbow Table: Using a table of hashes derived from passwords to compare against a ciphered password. [Please look at this example](https://youtu.be/icBD5PiyoyI?si=d1saS-j5J7_UvYiM&t=1758)
+- Rainbow Table: Using a table of hashes derived from passwords to compare against a ciphered password. [Please look at this real life hacking example](https://youtu.be/icBD5PiyoyI?si=d1saS-j5J7_UvYiM&t=1758)
 
 Its important to note the difference between offline and online attacks. Offline compares the results against a ciphertext or hash, so that the hacker isn't actually attempting to login. Online is the opposite; the hacker is not comparing its guess to any key. Online attacks are application dependant. (Will explain better in some other time)
 
 **Physical Attacks** (Not like assualt and battery fyi)
 
 - Malicious USB: Acts as an input device to infect a machine
-- Card cloning: Copies the magnetic strips from cards. Fine here's a whole fucken video! [Example](https://youtu.be/ZDstCHYlj0U?si=ZbKyvRH1D-nDu7WH)
-- Skimmers: Fake card readers placed on top of real ones to collect your credit card information. (PSA. Wiggle the card reader before each use)
+- Card cloning: Copies the magnetic strips from cards. [Here is a whole video about it](https://youtu.be/ZDstCHYlj0U?si=ZbKyvRH1D-nDu7WH)
+- Skimmers: Fake card readers placed on top of real ones to collect your credit card information. [PSA. Wiggle the card reader before each use or you'll end up like her](https://youtu.be/nBF5wTqyW-k?si=-2V7rWqycnTkub4t))
 
 **Adversarial Artificial Intelligence**
 
-- Tainted Training Data: Data that isn't categorized properly and thus misguides the machine learning process. (Editor's Note; This is a hard concept to understand if you don't know how AI works. Might have to explain how machine learning works in future update)
-- Security of ML Algorithims: Basically keep your code hidden
+- Tainted Training Data: Data that isn't categorized properly, weighted incorrectly, or otherwise trains the AI away from its intended purpose. [Machine learning algorithims are built on well sorted data](https://youtu.be/PeMlggyqz0Y?si=zgDLG95Q0zn8OiNW)
+- Security of Machine Learning Algorithims: Keep the categorization, the weighting, and other ways your AI interprets training data hidden to avoid someone purposefully feeding the AI with powerfull tainted training data.
 
-Supply Chain Attack: Malware is placed during the manufacturing or shipping of a product or one of its components. See [Stuxnet](https://youtu.be/djUHvCyPYhY?si=gDbZ9jFaNuArEFjM&t=167)
+Supply Chain Attack: Malware is placed during the manufacturing or shipping of a product or one of its components. [This is how the Stuxnet worm was smuggled into Iran's nuclear facility](https://youtu.be/djUHvCyPYhY?si=gDbZ9jFaNuArEFjM&t=170)
   
-Physical vulnerabilities don't exist in a cloud based network (atleast for Sec+ purposes. In theory, someone could WatchDogs_2 their way into a Google server farm)
+Physical vulnerabilities "don't exist" in a cloud based network (atleast for Sec+ purposes. [In theory, someone could Watch_Dogs_2 their way into a Google server farm](https://youtu.be/meERzyzBTIo?si=kyIu2KoHm4uUNm15))
 
 **Cryptographic Attacks**
 
-- Birthday: Hash collisions. Same hash, different password
-- Downgrade/ Bidding down/ Version rollback Attack: Forcing a downgrade on a encryption method to then hack that weaker version
+- Birthday: Hash collisions. Same hash, different password. Named after the birthday paradox; which states that in a room of 23 people there is a 50% chance that 2 people share a birthday; and 99.9% chance that 2 people share a birthday after 75 people or more are present. The principle applies here by replacing people with passwords and birthdays with hashes. The statistical probability that two passwords produce the same hash is extremely more rare than the original birthday paradox, but since the possibility exists, this attack method exists also. [Here is a link to the website of the researchers who proved this was possible with SHA-1 encryption.](https://shattered.io/) (Which is why we don't use it anymore)
+- Downgrade/ Bidding down/ Version rollback Attack: Forcing a downgrade on a encryption method to then hack that weaker version. [Video here](https://youtu.be/fBeShEMXcfU?si=IX4-iRu9jnTPnaed)
 
 ## 1.3 Hacking Applications
 
-Priviledge Escalation: Giving an unauthorized user more priviledges (User to Admin priviledges)
+Priviledge Escalation: A unauthorized user gaining more priviledges. For example, the [DirtyCOW exploit](https://nvd.nist.gov/vuln/detail/CVE-2016-5195); in which a linux user could write priviledges faster than the computer could verify that the user had the authority to write to that file. Which is also an example of a race condition (see below).
 
 **Injections**
 
 Injections take advantage of the following computer languages in order to do something malicious via the misuse of user input. 
 
 - SQL (Structured Query Language): SQL is a relational database structure; think of it as Excel spreadsheets. Injecting malicious SQL queries will allow a hacker to delete, change, or add data to that database strucute.
-- DLL (Dynamic Link Library): DLL is shared based code that is used in memory. A malware can rewrite DLLs so that programs that rely on that DLL are maliciously altered. Have you ever wanted to create your own gaming cheat engine? 
+- DLL (Dynamic Link Library): DLL is shared based code that is used in memory. A malware can rewrite DLLs so that programs that rely on that DLL are maliciously altered. Have you ever wanted to create your own gaming cheat engine? This is how
 - LDAP (Lightweight Directory Access Protocol): Its like a phonebook for internet users. 
 - XML (Extensible Markup Language): Used for the transmission of data between two points; this data can intercepted and altered with injections.
 - XSS (Cross Site Scripting): The implementation of malicious JavaScript code. JS is the underlying code that runs allows HTML websites to do logical tasks.
@@ -145,8 +145,8 @@ Injections take advantage of the following computer languages in order to do som
 - Error Handling: The way in which an application handles a error. For example, if the user types a letter where numbers are expected its better for an app to say something like "Error: Passcode may only contain numbers" instead of simply crashing.
 - Impropert Input Handling: The flawed acceptance of incorrect values or formatting. This is what allows injections to happen.
 - Buffer Overflow: When a buffer (or section of memory reserved for a specific purpose) receives too much data that it overflows to other pars of the RAM; and thus corrupting the data in the neighboring buffer.
-- Race Conditions: When two different processes run simultenously, but must finish in specific orders. If the secondary processes finishes their tasks before the expected first process, a problem can occur. A common example of this is Time of Check and Time of Use race conditions. Imagine two people that want to buy the same anime figure on ebay. Suppose that when someone purchases the figure, it will change its status to "Sold"; and it only checks for the availability of the product when its added to checkout cart. If Bob and Albert both have the same figure in their cart, but Bob buys the figure first; Albert might also incorrectly purchase that same figure that in reality is sold out. So what's the race condition here? The check of availibility from Albert races the Purchase (or Use) from Bob. This is why its best practice to have your checks and uses of resources as close as possible. In real life, ebay would have checked the availibility of the anime figure right before purchase instead of when it was placed on the cart, thus minimizing the possibility of a race condition.
-- Replay Attack: Resending legitimate info for a fradulent response. For example, [I clone your car keys using the same signal that your legitimate car keys send to unlock your car.](https://www.youtube.com/watch?v=uxzm_6SYBFo) (PSA. Don't try this at home and also consider buying a Faraday cage.) (but if you do want to hack a car, remember that rolling codes exist and you really need to capture the signal out of reach. See [Spider-man stole that guy's pizza (using a FlipperZero)](https://github.com/Cham0i))
+- Race Conditions: When two different processes run simultenously, but must finish in a specific orders. If the secondary processes finishes their tasks before the expected first process, a problem can occur. A common example of this is Time of Check and Time of Use race conditions. Imagine two people that want to buy the same anime figure on ebay. Suppose that when someone purchases the figure, it will change its status to "Sold"; and it only checks for the availability of the product when its added to checkout cart. If Bob and Albert both have the same figure in their cart, but Bob buys the figure first; Albert might also incorrectly purchase that same figure that in reality is sold out. So what's the race condition here? The check of availibility from Albert races the Purchase (or Use) from Bob. This is why its best practice to have your checks and uses of resources as close as possible. In real life, ebay would have checked the availibility of the anime figure right before purchase instead of when it was placed on the cart, thus minimizing the possibility of a race condition.
+- Replay Attack: Resending legitimate info for a fradulent response. For example, [I clone your car keys using the same signal that your legitimate car keys send to unlock your car.](https://www.youtube.com/watch?v=uxzm_6SYBFo) (PSA. Don't try this at home and also consider buying a Faraday cage.) (but if you do want to hack a car, remember that rolling codes exist and thus need to capture the signal out of reach)
   - Session Replay: A session ID is reset to a server from a hacker to obtian access to the target's session
 - Integer Overflow: If a number gets too big and does not have access to more bits to represent that number, the value resets back to 0 once the max value is reached.
 
@@ -167,19 +167,19 @@ Injections take advantage of the following computer languages in order to do som
 
 **Wireless**
 
-- Evil Twin: Fradulent copycat of a WAP
-- Rouge Access Point: A sketchy WAP. vague SSID, location is odd, sus.
+- Evil Twin: A fradulent copycat of a legitimate Wireless Access Point (WAP) which uses its identical SSID to trick clients into connecting to it.
+- Rouge Access Point: A WAP that was not authorized to be installed on the network. Most likely done by someone who is not a part of the IT department wanting wifi in their area and thus unintentionally compromising security... what a jerk...
 - BlueSnarfing: Hacker connects to unsecured bluetooth connection for contact, notification, data. etc.
 - BlueJacking: Connecting without pairing/ authentication. This is an old vulnerability, most modern bluetooth devices require pairing.
-- RFID: Radio Frequency Identification. The tech used in NFC
-- NFC: Near Field Communications. Tap to pay. Security Badges.
-- IV: Initialization Vector: Piece of keystream used per session (frame). (Will be explained better some other day)
-- On-Path/ Man-in-the-middle Attack: Routing data through a hacker's machine so that the data is viewed.
+- Radio Frequency Identification (RFID): The tech used in NFC
+- Near Field Communications (NFC): Tap to pay. Security Badges.
+- Initialization Vector (IV): Piece of keystream used per session (frame). (Will be explained better some other day)
+- On-Path/ Man-in-the-middle Attack: Routing data through a hacker's device so that the data is viewed. [A common example is using a Evil Twin to redirect traffic with the hacker also being able to view the data going thru it](https://youtu.be/1OVTmrXGHyU?si=SWWwf0NBZgAOhUNh)
 
 **Layer 2 Attacks (Data Link)**
 
-- ARP (Address Resolution Protocol): You should know this by now (See [this](https://github.com/Cham0i/Netacad?tab=readme-ov-file#encapsulation-address-resolution-protocol-arp-mac-address-table-and-routing-tables))
-  - ARP Poisining: Spoofing a fake MAC so that the ARP cache is inaccurate
+- Address Resolution Protocol (ARP): You should know this by now (See [this](https://github.com/Cham0i/Netacad?tab=readme-ov-file#encapsulation-address-resolution-protocol-arp-mac-address-table-and-routing-tables))
+  - ARP Poisining: Spoofing (AKA pretending to be legitimate) a fake MAC so that the ARP cache is inaccurate
   - MAC Flooding: Registering an overwhelming amount of new MACs to the MAC table to force the switch to act as a hub
   - MAC Cloning: Using someone else's MAC
 
@@ -192,7 +192,7 @@ Injections take advantage of the following computer languages in order to do som
 
 **DDos**
 
-- Distributed Denial of Service: Multiple bots send multiple requests to strain an app, server, network, operational tech, etc.
+- Distributed Denial of Service: Multiple bots send multiple requests to strain an app, server, network, operational tech, etc. This is different from a normal Denial of Service attack, because with DDos the attacks come from various sources. Therefore a server isn't able to simply block a single IP from making an excessive amount of requests but must rather contend with multiple IPs collectively sending a myriad of requests (of which a server will most likely be unable to decern if they are legitimate).
 
 **Malicious code or script execution**
 
@@ -202,7 +202,7 @@ Powershell, Python, Bash, Macros, VBA, can all change file permissions, NTFS per
 
 **Actors and Threats**
 
-- APT (Advanced Persistent Threats): Hackers that will always attempt to hack you
+- Advanced Persistent Threats (APT): Hackers that will always attempt to hack you
 - Insider Threats: Threats within your organization. Either traitors or incompetent people
 - State Actors: Government sponsored hackers (China, Russia, North Korea)
 - Hacktivists: Hackers motivated by politics
