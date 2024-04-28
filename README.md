@@ -9,7 +9,7 @@ Hello. Use this to learn and practise for your CompTIA Security + exam.
    - 1.2 Types of Attacks
    - 1.3 Application Attacks
    - 1.4 Network Attacks
-   - 1.5 Threat Actors, Vectors and Intelligence Sources
+   - 1.5 [Threat Actors, Vectors and Intelligence Sources](https://github.com/Cham0i/SecPlus/blob/main/README.md#15-threat-vectors-actors-and-intelligence-sources)
    - 1.6 Vulnerabilities
    - 1.7 Techniques used in Security Assesments
    - 1.8 Techniques used in Penetration Testing
@@ -306,10 +306,10 @@ Identity theft: Impersonation with documents
 ## 1.7 Techniques used in security assesments
 
 - Threat Hunting: Actively locating and mitigating cyber attacks
-- Intelligence Fusion: The good guys should share data
-- Threat feeds: RSS Feeds, podcasts, blogs, etc
-- Advisories and Bulletins: Announcement by organizations
-- Manuever between these different techniques??????
+- Intelligence Fusion: The good guys share Computer Threat Intelligence (CTI)
+- Threat feeds: RSS Feeds, podcasts, blogs, etc. [See Research Sources](https://github.com/Cham0i/SecPlus/blob/main/README.md#15-threat-vectors-actors-and-intelligence-sources)
+- Advisories and Bulletins: Announcement by organizations. See Research Sources (link above)
+- Manuever between these different techniques
 
 **Vulnerability Scans**
 
