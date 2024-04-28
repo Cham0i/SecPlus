@@ -246,6 +246,9 @@ Darkweb: The .onion sites. Illegal activity sometimes, but mostly FBI honey pots
 
 - Indicators of Compromise (IoCs): Evidence to believe a hack occured
 - Structured Threat Information Expression/ Trusted Automated Exchange of Intelligence Information (STIX/ TAXII): Made by the Department of Homeland Security to easily share cyber threat intelligence (CTI). Think of them as the NFPA 704 hazard symbols of the cybesecurity field. [Here is a list of STIX objects](https://oasis-open.github.io/cti-documentation/stix/intro). TAXII is often also mentioned when STIX is brought up because TAXII is the protocol in which people commonly communicate STIX objects. However, STIX objects are what is most important here and don't necessarly have to be transmitted using TAXII.
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/stix.webp)
+
 - Predictive Analysis: Anticipation of incident, often using AI to guess hardware failures or network overload.
 - Threat Maps: Geographic representations of past attacks. Its what you see prompt up in the "command room" in a lot of movies. [Here is a website that displays a live threat map](https://threatmap.checkpoint.com/) 
 - File/ Code repositories: Storage area for data/ code (Hello, you are currently viewing this repository for Sec+ right now. Typically code is shared in these files, but im using as my own website)
@@ -260,6 +263,9 @@ Darkweb: The .onion sites. Illegal activity sometimes, but mostly FBI honey pots
 - Local Industrial Groups: Based on industry (issa.org ????)
 - Social Media: Reddit, twitter, youtube.etc
 - Threat Feeds: Real time data streams recognizing threats
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/threatmap.jpg)
+
 - Advesary Tactics, Techniques, and Procedures (TTP): The actions of threat actors to gain access. Goal (Tactic) How (Technique) specific way/ variables (procedures)
 
 ## 1.6 Security Concerns with various types of vulnerabilities
