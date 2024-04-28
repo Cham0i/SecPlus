@@ -78,7 +78,7 @@ Influence Campaigns use hybrid warefare, which is the use of politics, culture, 
 
 - Authority: Appears to be coming from superordinate or legitimate business, coworker, etc with authorization.
 - Intimidation: Invokes a fear of punishment or responsibility of a major loss
-- Consensus/ social proof: Comforts to a popular verdict (sheeple. beheheheheh)
+- Consensus/ social proof: Comforts to a popular verdict ("Everyone else is doing it, why aren't you?")
 - Scarcity: Invokes a fear of missing out on a rewarding opportunity
 - Urgency: Pressures the victim into taking action due to a closing time frame
 - Familiarity/ Liking: Friendship or bond building using a victims sense of humor, hobbies, tastes, etc.
@@ -151,7 +151,7 @@ Injections take advantage of the following computer languages in order to do som
 - Buffer Overflow: When a buffer (or section of memory reserved for a specific purpose) receives too much data that it overflows to other pars of the RAM; and thus corrupting the data in the neighboring buffer.
 - Race Conditions: When two different processes run simultenously, but must finish in a specific orders. If the secondary processes finishes their tasks before the expected first process, a problem can occur. A common example of this is Time of Check and Time of Use race conditions. Imagine two people that want to buy the same anime figure on ebay. Suppose that when someone purchases the figure, it will change its status to "Sold"; and it only checks for the availability of the product when its added to checkout cart. If Bob and Albert both have the same figure in their cart, but Bob buys the figure first; Albert might also incorrectly purchase that same figure that in reality is sold out. So what's the race condition here? The check of availibility from Albert races the Purchase (or Use) from Bob. This is why its best practice to have your checks and uses of resources as close as possible. In real life, ebay would have checked the availibility of the anime figure right before purchase instead of when it was placed on the cart, thus minimizing the possibility of a race condition.
 - Replay Attack: Resending legitimate info for a fradulent response. For example, [I clone your car keys using the same signal that your legitimate car keys send to unlock your car.](https://www.youtube.com/watch?v=uxzm_6SYBFo) (PSA. Don't try this at home and also consider buying a Faraday cage.) (but if you do want to hack a car, remember that rolling codes exist and thus need to capture the signal out of reach)
-  - Session Replay: A session ID is reset to a server from a hacker to obtian access to the target's session
+  - Session Replay: A type of replay attack where a victim's session ID is resent to the server from the hacker in order to obtian access to the victim's session
 - Integer Overflow: If a number gets too big and does not have access to more bits to represent that number, the value resets back to 0 once the max value is reached.
 
 **Request Forgery**
@@ -190,7 +190,7 @@ Injections take advantage of the following computer languages in order to do som
 **DNS**
 
 - Domain Hijacking: Taking control over a domain
-- URL Redirection: Redirecting from a URL to another site
+- URL Redirection: Redirecting from a URL to another site/ IP
 - DNS Poisining: Adding spoofed DNS cache to be spread by other DNS servers
 - Domain Reputation: Maliciously blacklisting domains can hurt their potential views on the web.
 
@@ -245,26 +245,26 @@ Information Sharing and Analysis Center (ISAC): Established after 9/11. ISAC ens
 Darkweb: The .onion sites. Illegal activity sometimes, but mostly FBI honey pots pretending to be illegal websites.
 
 - Indicators of Compromise (IoCs): Evidence to believe a hack occured
-- STIX/ TAXII: DHS specifications for cybersecurity sharing
+- Structured Threat Information Expression/ Trusted Automated Exchange of Intelligence Information (STIX/ TAXII): Made by the Department of Homeland Security to easily share cyber threat intelligence (CTI). Think of them as the NFPA 704 hazard symbols of the cybesecurity field. [Here is a list of STIX objects](https://oasis-open.github.io/cti-documentation/stix/intro). TAXII is often also mentioned when STIX is brought up because TAXII is the protocol in which people commonly communicate STIX objects. However, STIX objects are what is most important here and don't necessarly have to be transmitted using TAXII.
 - Predictive Analysis: Anticipation of incident, often using AI to guess hardware failures or network overload.
-- Threat Maps: Geographic representations of past attacks
-- File/ Code repositories: Storage area for data/ code (Hello, you are currently viewing this repository for Sec+ right now)
+- Threat Maps: Geographic representations of past attacks. Its what you see prompt up in the "command room" in a lot of movies. [Here is a website that displays a live threat map](https://threatmap.checkpoint.com/) 
+- File/ Code repositories: Storage area for data/ code (Hello, you are currently viewing this repository for Sec+ right now. Typically code is shared in these files, but im using as my own website)
 
 **Research Sources**
 
-- Vendor Websites: Website of product's vendor (Dell, Apple, Cisco, etc.)
-- Vulnerability Feeds: Newsletters, RSS Feeds, Content creators, etc.
-- Conferences: DEFCON, Blackhat, etc.
+- Vendor Websites: Website of product's vendor (Dell, [Apple](https://support.apple.com/en-us/HT201222), [Cisco](https://sec.cloudapps.cisco.com/security/center/resources/vex-cvr-faqs), etc.)
+- Vulnerability Feeds: Newsletters, RSS Feeds, Content creators, etc. EXAMPLES: https://cyberprotection-magazine.com/ https://www.esecurityplanet.com/ https://jetpatch.com/blog/ 
+- Conferences: [DEFCON](https://www.youtube.com/@DEFCONConference/videos), [Blackhat](https://www.blackhat.com/us-24/), etc.
 - Academic Journals: Often theoretical without practibility. College papers.
-- Request For Comment (RFC): ARPANET Documents by the IETF, IRTF and IAB rfc-editor.org
-- Local Industrial Groups: issa.org Based on industry
+- Request For Comment (RFC): Documents maintained by the IETF. They are the "laws" of the internet, essentially creating the standard for computer communication across all layers (of the OSI model). [You may find the entire RFC collection here](https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard)
+- Local Industrial Groups: Based on industry (issa.org ????)
 - Social Media: Reddit, twitter, youtube.etc
 - Threat Feeds: Real time data streams recognizing threats
 - Advesary Tactics, Techniques, and Procedures (TTP): The actions of threat actors to gain access. Goal (Tactic) How (Technique) specific way/ variables (procedures)
 
 ## 1.6 Security Concerns with various types of vulnerabilities
 
-Cloud vs on-premise. Cloud doesn't have phyiscal vulnerabilities (for purposes of the Sec+ test).
+And here I come to assert to you again, that in comparing a Cloud network vs on-premise network, Cloud networks do not have phyiscal vulnerabilities (for purposes of the Sec+ test).
 
 Zero Day: Vulnerability that was previously unknown upon release. Comes from the fact that the vulnerability was present on day zero.
 
@@ -280,22 +280,22 @@ Zero Day: Vulnerability that was previously unknown upon release. Comes from the
 
 **Third Part Risks**
 
-- Vender Management: Vendor negotiating, contracts, termination
-- System integration: Merging organization increases attack surface
-- Lack of vendor support: Not communicating or providing End of Life (EOL) and EOSL
-- Outsourced code developement: Doesn't known 100% what is inside code if made elsewhere
-- Data Storage: Ensure 3rd party keeps your data secure
-- Impropert/ Weak path management: Centralize the patches and test them before deploying to the network
-- Lagacy Platforms: EOSL doesnt get security updates
+- Vender Management: Vendor negotiating, contracts, termination. Essentially, make sure your organization has the money and diplomacy to rely on the vendor.
+- System integration: Although merging organizations might increase productivity it also increases the attack surface for any potential hacker. 
+- Lack of vendor support: Not communicating nor providing End of Life (EOL) and End of Service Life (EOSL) support to products might mean that once the vendor is done with a product/ service continuing to use the product/ service may expose your organization to threats which the vendor will not be able to help with.
+- Outsourced code developement: Your organization doesn't known for sure what is inside a given piece of code if its produced elsewhere.
+- Data Storage: The 3rd party vendor must be trustworthy enough to keep your organazations' data secure.
+- Improper/ Weak path management: To ensure that the product/ service is compatible with your organization its important to centralize the patches and test them prior deploying them to the network.
+- Legacy Platforms: EOSL that doesn't get security updates
 
 Impacts the following:
 
 1) Financial. In the form of delayed sales, overtime, fines, quantitive loss of money
-2) Reputation. Data Breach = Your security sucks
-3) Availibility loss. Unavailible data
+2) Reputation. Data Breach = Your security sucks, which implies you suck and your products suck
+3) Availibility loss. Unavailible data and angry customers.
 4) Data Loss (gone/deleted) Data Breach (viewed by unauthorized people) or Data exfiltration (stolen data)
 
-Identity theft: Impersination with documents
+Identity theft: Impersonation with documents
 
 ## 1.7 Techniques used in security assesments
 
@@ -709,6 +709,7 @@ DNS Segmentation
 - File Integrity Monitors (FIM): ?:???
 
 ## 3.4 Wireless Security Settings
+
 
 - WPA2: AES, 8-63 characters, pre-shared key
 - WPA3: same, but diffie-hellman
