@@ -13,7 +13,7 @@ Hello. Use this to learn and practise for your CompTIA Security + exam.
    - 1.6 Vulnerabilities
    - 1.7 Techniques used in Security Assesments
    - 1.8 Techniques used in Penetration Testing
-2) [ARCHITECTURE AND DESIGN](https://github.com/Cham0i/SecPlus/blob/main/README.md#1-threats-attacks-and-vulnerabilities)
+2) [ARCHITECTURE AND DESIGN](https://github.com/Cham0i/SecPlus/blob/main/README.md#2-architecture-and-design)
    - 2.1 Security Concepts in an Enterpise Enviroment
    - 2.2 Virtualization and Cloud Computing Concepts
    - 2.3 Secure Application Development, Deployment, and Automation Concepts
@@ -22,7 +22,7 @@ Hello. Use this to learn and practise for your CompTIA Security + exam.
    - 2.6 Security Implications of Embedded and Specialized Systems
    - 2.7 Physical Security Controls
    - 2.8 Cryptographic Concepts
-3) [IMPLEMENTATION](https://github.com/Cham0i/SecPlus/blob/main/README.md#1-threats-attacks-and-vulnerabilities)
+3) [IMPLEMENTATION](https://github.com/Cham0i/SecPlus/blob/main/README.md#3-implementation)
    - 3.1 Secure Protocols
    - 3.2 Host or Application Security Solutions
    - 3.3 Secure Network Designs
@@ -367,37 +367,50 @@ Red (ATTCK) Blue (DEF) White (Referees) Purple (ATTK and DEF/ Coach coms)
 
 **Configuration Management**
 
-- Diagrams: Physical hardawre location
+The following image depicts a network created by some random person online.
+
+![alt text}(https://github.com/Cham0i/SecPlus/blob/main/SecPics/netdiawhite.png)
+
+In a professional setting, the Standard Naming Convention should be short, but precise. For example, instead of naming a switch "dumb switch" you might opt to name it S1 (for Switch 1). For much larger organizations, you may have to add additional information like the floor that the device is on and which building its located in. Example: ES3-E4 could be your organizations' way of referring to the ExchangeServer #3 located in the East building on the 4th floor. Whatever naming convention your organization adopts, it has to be uniform accross all devices and should adhere to a short, but precise principle. Just like the names of devices, the devices' IPs should also be neat, organized and uniform. In the image above, we can see that IP cameras use IP addresses from 10.10.3.2 - 10.10.3.10. PCs and servers seem to take IPs 10.10.2.50 - 10.10.2.255. Again, whatever IP Schema your organization uses, ensure that its easy to understand so that identifying computers whilst troubleshooting is easiest. 
+
+The image above was an example of a logical network topology. Meaning that it shows devices and its connections to other devices as they are located within the various networks and subnets. The image below is a physical network topology. Its purpose is to show where the devices are located in terms of geogpraphy. 
+
+![alt text]()
+
+Both are diagrams/ topologies, but serve different purposes. If you want to know where a device is, use physical; if you want to know what its connected to; use logical.
+
 - Baseline Configuration: Baseline Performance
-- Standard Naming Conventions (EXAMPLE: FS3-E4 = File Server 3 on East Building 4)
-- IP Schema (Like using the first availible IP for router. .2-.10 for switches, etc.
 - Data Sovereignty: Under which government is data under the jurisdiction of?
 
 **Data Protection**
 
-- Data Loss Protection (DLP): USB Blocking, backup verification, data monitoring, etc
-- Masking: (xxx) xxx-1234
-- Tokenization: Patient # or random number or string that is tied to sensitive information elsewhere. Student IDs
-- Digital Rights Management (DRM): Stop pirating and easy copying
-- Geographical considerations: Legal jurisdiction, threats, lag
-- Response and Recovery Controls: The thing ControlIncidentResponce people do
+- Data Loss Protection (DLP): An umbrella term for methods and products intended to keep data from being lost. USB Blocking, backup verification, data monitoring, etc
+- Masking: Censoring of data. (xxx) xxx-1234. SSN: *** - ** - 1234
+- Tokenization: An arbitrary number or string that is tied to sensitive information elsewhere. Student ID: 1602851, Patient #: 159ST3, Traffic Ticket Violation: WMG16-195MFGAP6LT 
+- Digital Rights Management (DRM): Technologies aimed at stoping piracy of their products
+- Geographical considerations: Consider under which legal jurisdiction your server will operate under, possible threats to that site, and lag caused by the distance of your servers to your customers. 
+- Response and Recovery Controls: The thing Control Incident Responce people do
 - SSL/ TLS Inspection: Grabing, decyphering and reencrypting packets
-- Hashing: Integrity check using asymetric key encryption
-- API considerations: Don't trust 3rd party code
+- Hashing: Integrity checks can be done using asymetric key encryption
+- API considerations: Never fully trust code your organization didn't write. 
 
 **Site Resiliency**
 
-- Hot: Basically the main site
-- Warm: Has some utilities, old hardware, insufficient amount for maximum productivity
-- Cold: No or few utilities, only servers, open space mostly
+You know how doomsday prepares have bunkers in case their homes are destroyed? Well organizations have hot, warm, and cold sites in case of emergencies (like the California wildfires).
+
+- Hot: Basically the main site. It might effectively be another branch or store that operates nearly identical to your original site.
+- Warm: May have some utilities, older hardware, overall the site has an insufficient amount of resources for maximum productivity (as compared to your original site). Imagine having 1 port-a-potty for 40 people...
+- Cold: No or few utilities, basically only servers, open space mostly.
 
 **Deception and Disruption**
 
-- Honeyfile: Bait for attackers to click on. Sends alarm to defense team
-- HoneyPot: Machine bait for attackers to access
-- Honeynet: Entire net designed for bait away from real network
-- Fake telemetry: Fake serverloads, RAM consumption, etc.
-- DNS sinkholes: DNS server that ignores requests for known malicious websites
+"Honey" + [anything] is a trap! They are meant to lure attackers into triggering an alarm or away from the real deal. "Honeyyyy, he's just a friend" -My EX, Summer of 2019
+
+- Honeyfile: Fake files that bait attackers to click on or interact with. They usually send an alarm to the defense team
+- HoneyPot: A term used to describe the collective honeynet and honeyfiles used to bait hackers. Usually in refrence to websites. "David, c'mon buddy... hire-a-hitman.com is obviously a FBI honeypot"
+- Honeynet: An entire fake network designed to distract a hacker away from the real network
+- Fake telemetry: If a wise attacker were to see a router that isn't routing anything, he might deduce that it is looking at a device within a honeynet. However, if you were to implement fake serverloads, RAM consumption, packet transfers, etc...the hacker might believe the network is legitimate. 
+- DNS sinkholes: A DNS server that ignores requests for known malicious websites "Sorry Timmy, we can't let you access NoScamFreeRobux.com. They already gave Dave's PC internet STDS"
 
 ## 2.2 Virtualization and Cloud Computing concepts
 
@@ -475,7 +488,7 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 
 **Biometrics**
 
-- Fingerprint ($cheap$), Retina/Iris ($$Expensive$$), Facial (Uses infrared tech), vain matching (accurate), voice (inaccurate), gait analysis (AKA walking analysis. its 75% accurate)
+- Fingerprint (cheap), Retina/Iris (Expensive), Facial (Uses infrared tech), vain matching (accurate), voice (inaccurate), gait analysis (AKA walking analysis. its 75% accurate)
 - False Rejection Rate (Type 1 error), False Acceptance Rate (Type 2 error), and Crossover Error Rate (sweet spot).
 
 [ADD GRAPH]
