@@ -11,7 +11,7 @@ Hello. Use this to learn and practise for your CompTIA Security + exam.
    - 1.4 Network Attacks
    - 1.5 [Threat Actors, Vectors and Intelligence Sources](https://github.com/Cham0i/SecPlus/blob/main/README.md#15-threat-vectors-actors-and-intelligence-sources)
    - 1.6 Vulnerabilities
-   - 1.7 Techniques used in Security Assesments
+   - 1.7 [Techniques used in Security Assesments](https://github.com/Cham0i/SecPlus/blob/main/README.md#17-techniques-used-in-security-assesments)
    - 1.8 Techniques used in Penetration Testing
 2) [ARCHITECTURE AND DESIGN](https://github.com/Cham0i/SecPlus/blob/main/README.md#2-architecture-and-design)
    - 2.1 Security Concepts in an Enterpise Enviroment
@@ -317,7 +317,7 @@ Identity theft: Impersonation with documents
 
 **Vulnerability Scans**
 
-This is called a $Confusion Matrix$
+This is called a Confusion Matrix
 
 ![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/confusion.png)
 
@@ -355,7 +355,7 @@ A unified collection of data for real time analysis. [A much more detailed expla
 
 **Passive and Active Recon**
 
-War [anything] Searching for wireless networkds. Footprinting is collecting as much info on the target.
+"War" + [anything] means searching for wireless networks. Remember when you were in middle school and didn't have cellular data? So you turned on the Wifi to try to connect to random WAPs as your school bus drove by? It was War Driving, Barry. Footprinting is collecting as much info on the target.
 
 **Exercise and Types**
 
@@ -369,13 +369,13 @@ Red (ATTCK) Blue (DEF) White (Referees) Purple (ATTK and DEF/ Coach coms)
 
 The following image depicts a network created by some random person online.
 
-![alt text}(https://github.com/Cham0i/SecPlus/blob/main/SecPics/netdiawhite.png)
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/netdiawhite.png)
 
 In a professional setting, the Standard Naming Convention should be short, but precise. For example, instead of naming a switch "dumb switch" you might opt to name it S1 (for Switch 1). For much larger organizations, you may have to add additional information like the floor that the device is on and which building its located in. Example: ES3-E4 could be your organizations' way of referring to the ExchangeServer #3 located in the East building on the 4th floor. Whatever naming convention your organization adopts, it has to be uniform accross all devices and should adhere to a short, but precise principle. Just like the names of devices, the devices' IPs should also be neat, organized and uniform. In the image above, we can see that IP cameras use IP addresses from 10.10.3.2 - 10.10.3.10. PCs and servers seem to take IPs 10.10.2.50 - 10.10.2.255. Again, whatever IP Schema your organization uses, ensure that its easy to understand so that identifying computers whilst troubleshooting is easiest. 
 
 The image above was an example of a logical network topology. Meaning that it shows devices and its connections to other devices as they are located within the various networks and subnets. The image below is a physical network topology. Its purpose is to show where the devices are located in terms of geogpraphy. 
 
-![alt text]()
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/physicaltopology.jpg)
 
 Both are diagrams/ topologies, but serve different purposes. If you want to know where a device is, use physical; if you want to know what its connected to; use logical.
 
@@ -491,7 +491,13 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 - Fingerprint (cheap), Retina/Iris (Expensive), Facial (Uses infrared tech), vain matching (accurate), voice (inaccurate), gait analysis (AKA walking analysis. its 75% accurate)
 - False Rejection Rate (Type 1 error), False Acceptance Rate (Type 2 error), and Crossover Error Rate (sweet spot).
 
-[ADD GRAPH]
+Each of these methods have the potential to have false responces. [See Confusion Matrix under 1.7](https://github.com/Cham0i/SecPlus/blob/main/README.md#17-techniques-used-in-security-assesments) The frequency of these mistakes may not be evenly split between False Positives and False Negatives, therefore the sensitivity of these biometric measurements must be sufficiently calibrated so there is a equal number of FP as there are FN. This ensures that the biometric comparison correctly accepts/ rejects the most amount of times. Think of it like a bell curve and we are trying to find the expected value so that the most amount of TP and TN occur. You could also think of it like a Supply-Demand curve and we are trying to find the point of equilibrium where the number of FP errors and FN errors are the same. Of course with cybersecurity, we are representing something different than in statistics or economics. A Type 1 error/ False Rejection Rate curve represents the increasing amount of False Negatives (meaning authorized users being kept out) as the biometric becomes more sensative to any little deviances from its pattern. Enjoy the following meme:
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/finger.jpg)
+
+Conversely, a Type 2 error/ False Acceptance Rate curve represents the decreasing amount of False Positives (unauthorized users being let in) as that sensitivity increases. The 'sweet spot' for sensitivity is where the Type 1 and Type 2 curves meet and it is known as the Crossover Error Rate. The following graph is a depiction of FRR, FAR and CER
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/CER.webp)
 
 **Multifactor Authentication (MFA)**
 
@@ -500,7 +506,7 @@ Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
 
 ## 2.5 Implement Cybersecurity Resilience
 
-- Geographical Dispersal: Synced copies around the world to avoid natural disasters or "peacefull protests"
+- Geographical Dispersal: Have synced copies around the world to ensure that data isn't destroyed due to some emergency
 - Redundant Array of Independant Disks
 
 [EXPLAIN RAID 1, 0, 10, 5, 6 and Parity using XOR]
