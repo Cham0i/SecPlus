@@ -144,12 +144,17 @@ Injections take advantage of the following computer languages in order to do som
 - XML (Extensible Markup Language): Used for the transmission of data between two points; this data can intercepted and altered with injections.
 - XSS (Cross Site Scripting): The implementation of malicious JavaScript code. JS is the underlying code that runs allows HTML websites to do logical tasks.
 
-- Pointer/ Object Deference: A pointer (AKA the piece of code that tells an OS where to find the rest of the information on a hardrive) can point to the wrong location and cause a crash
+[Click here for an example of this in practice](https://youtu.be/KnQIbyK779I?si=BcPJQpxn29i2ShBn&t=227) 
+
+- Pointer/ Object Deference: A pointer (AKA the piece of code that tells an OS where to find the rest of the information on a hardrive) can point to the wrong location and cause a crash. [Perphaps this CS50 video can dumb it down](https://youtu.be/qPI9a2N9s74?si=RpIjMQC0pLkAR8z1)
 - Directory Traversal: Inspecting directories (AKA the folders on your PC) to plan out a potential attack or espionage
-- Error Handling: The way in which an application handles a error. For example, if the user types a letter where numbers are expected its better for an app to say something like "Error: Passcode may only contain numbers" instead of simply crashing.
+- Error Handling: The way in which an application handles an error. For example, if the user types a letter where numbers are expected its better for an app to say something like "Error: Passcode may only contain numbers" instead of simply crashing.
 - Impropert Input Handling: The flawed acceptance of incorrect values or formatting. This is what allows injections to happen.
 - Buffer Overflow: When a buffer (or section of memory reserved for a specific purpose) receives too much data that it overflows to other pars of the RAM; and thus corrupting the data in the neighboring buffer.
 - Race Conditions: When two different processes run simultenously, but must finish in a specific orders. If the secondary processes finishes their tasks before the expected first process, a problem can occur. A common example of this is Time of Check and Time of Use race conditions. Imagine two people that want to buy the same anime figure on ebay. Suppose that when someone purchases the figure, it will change its status to "Sold"; and it only checks for the availability of the product when its added to checkout cart. If Bob and Albert both have the same figure in their cart, but Bob buys the figure first; Albert might also incorrectly purchase that same figure that in reality is sold out. So what's the race condition here? The check of availibility from Albert races the Purchase (or Use) from Bob. This is why its best practice to have your checks and uses of resources as close as possible. In real life, ebay would have checked the availibility of the anime figure right before purchase instead of when it was placed on the cart, thus minimizing the possibility of a race condition.
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/racecon.webp)
+
 - Replay Attack: Resending legitimate info for a fradulent response. For example, [I clone your car keys using the same signal that your legitimate car keys send to unlock your car.](https://www.youtube.com/watch?v=uxzm_6SYBFo) (PSA. Don't try this at home and also consider buying a Faraday cage.) (but if you do want to hack a car, remember that rolling codes exist and thus need to capture the signal out of reach)
   - Session Replay: A type of replay attack where a victim's session ID is resent to the server from the hacker in order to obtian access to the victim's session
 - Integer Overflow: If a number gets too big and does not have access to more bits to represent that number, the value resets back to 0 once the max value is reached.
@@ -218,8 +223,7 @@ Powershell, Python, Bash, Macros, VBA, can all change file permissions, NTFS per
 **Attributes of actors**
 
 1. Internal or External (Is it Dave, from sales department, or is it a hacker from Russia?)
-2. Sophistication level/ Capabilities (Is he a script kiddie or motherfucking Aiden Pearce?)
-![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/sophistication_meme.jpg)
+2. Sophistication level/ Capabilities (Is he a script kiddie or or a Watch_Dogs protagonist?)
 3. Resources and funding (Does he have a single laptop to attack you or a gigantic botnet?)
 4. Intent and motivation
 ![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/why.jpg)
@@ -313,15 +317,20 @@ Identity theft: Impersonation with documents
 
 **Vulnerability Scans**
 
-- False hit, True hit, positive, negative matrix (Incorrect, Correct, Threat, Nonthreat)
+This is called a $Confusion Matrix$
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/confusion.png)
+
+It lays out the options for a machine learning algorithim (or any form of decision making) to categorize its outputs. Using the example of COVID-19 testing, we could say that a TP is when a COVID carrier tests positive. A TN would be when a non-carrier tests negative for COVID. Both of these are True, and thus the desired outcomes. Yet, sometimes FP and FN may occur in AI algorithims. In our COVID example, this would be as if a non carrier test positive or when a carrier tests negative. Its important to make good criterias for training AI or making network administration policies so that hackers are deterred and legitimate employees remain undisturbed.  
+
 - Log Reviews: Looking for signs of attack using logs
-- Credentialed vs not: Valid authentication (admin priv.)
-- intrusive vs non: Affects perfomance, may restart as opposed to background scan
-- CVE/CVSS: Databases and scoring of vulnerabilities (SolarWinds, Net.Configuration Manager)
+- Credentialed vs not: Valid authentication (admin priviledges)
+- intrusive vs non-intrusive: Affects perfomance, may restart as opposed to background scan
+- Common Vulnerabilities Exposure/ Common Vulnerabilities Scoring System (CVE/CVSS): Databases and scoring of vulnerabilities. [Video Explanation Here](https://youtu.be/SYio0CH6-Mo?si=RofMiMLz1h23-E78)
 
 **Security Information and Event Manager (SIEM)**
 
-A unified collection of data for real time analysis.
+A unified collection of data for real time analysis. [A much more detailed explanation of SIEM](https://youtu.be/zrgBrpv4azs?si=FA-Zi7W4DjI6RhPj)
 
 - Review Reports: Results of success rate of SIEM/time period
 - Packet Capture: Collecting packets of data
