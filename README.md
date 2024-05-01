@@ -416,7 +416,7 @@ You know how doomsday prepares have bunkers in case their homes are destroyed? W
 
 **Cloud Models**
 
-- Infastructure as a service: Azure, AWS
+- Infastructure as a service: Cloud Services Providers that create, maintain networks and store the data within those networks. Example: Microsoft Azure, Amazon Web Services
 - Platform as a service: Web app server, database server, etc.
 - Software as a service: Apps like Google Drive, docs, excel, etc
 - Anything as a service (Xaas): Monitoring (Maas) Desktop (Daas)
@@ -448,7 +448,13 @@ You know how doomsday prepares have bunkers in case their homes are destroyed? W
 
 **Testing**
 
-Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs
+Code quality, debugging, use IDE (static code analysis) fuzzing (random inputs, types of dynamic code analysis AKA live test)
+
+- Code signing
+- Provisioning
+- Staging
+- Quality Assurance
+- Integrity Measurements
 
 [REDO THIS SECTION]
 
@@ -590,7 +596,13 @@ Conversely, a Type 2 error/ False Acceptance Rate curve represents the decreasin
 - Modes of operation: DES uses 5 blocks
 - Electronic Code Book (ECB): 64 bit plain directly to cyphertext. Identical ciphertext will have identical messages
 - Cipher Block Chaining (CBC): Encryption has to be sequential. One chain error can corrupt the rest of the data.
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/CBC.png)
+
 - Counter Mode (CTR): using nounce/ counter. Uses XOR to decrpyt?
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/CTR.png)
+
 - Authentication Encryption (AE): Encrypts message and authenticates it
 - Blockchain: Uses public ledger as a decentralized way to record transactions within the blockchain of computers using the crypto currency
 - Cipher Suites: Group of algorithms used to secure connections
@@ -600,7 +612,6 @@ Conversely, a Type 2 error/ False Acceptance Rate curve represents the decreasin
 - Steganography: Hiding data in other data (audio, video, image)
 - Homomorphic Encryption: Modifying encrpyted data which applies its changes once decrpyted
 
-[USE DIAGRAMS HERE]
 
 Common use cases 
 
@@ -686,6 +697,9 @@ Databases can salt, tokenize, and hash data
 
 VLAN segmentation to organize and avoid lateral movement
 - DMZ/ screened subnet
+
+![alt text](https://github.com/Cham0i/SecPlus/blob/main/SecPics/DMZ.webp)
+
 - East west traffic: Server to server within LAN
 - North South traffic: Internet leaves LAN
 - Intranet: Local LAN
@@ -748,4 +762,26 @@ DNS Segmentation
 - WPA2: AES, 8-63 characters, pre-shared key
 - WPA3: same, but diffie-hellman
 - Counter Mode Cipther Block Protocol (CCMP): 128 bit key and 128 block size. 48 bit IV? (initialization vector???)
-- Simultaneous Auth
+- Simultaneous Authority of Equals (SAE): Forces every WPA3 compatible device to use diffie-hellman authorization/ encryption
+
+**Authentication Protocols**
+
+- Extensible Authorization Protocol (EAP): Collection of different authorization methods
+- Protected EAP: EAP but with digital TLS certification on server side
+- EAP FAST: EAP with TLS tunnels for WEP authorization, reauthorizing periodically
+- EAP TLS: Server and Client Side certifications
+- EAP TTLS: Tunnel TLS only with server side certification
+- IEEE 802.1x: Port based access control
+  - Supplicant: A wireless client
+  - Authenticator: A supplicant using 802.1x
+ 
+RADIUS: Used in federated system to connect authorized systems and credendial database
+
+**Methods**
+
+- PSK (Pre shared key) vs. Enterprise (RADIUS) vs Open (No authentication)
+- Wifi Protected Setup (WPS): Press a button on device and router to connect to each other.
+- Captive Portals: Websites to authenticate wifi user (ISP hotspots, Delta Airlines wifi, any wifi that asks for authentication)
+
+**Installation Considerations**
+
