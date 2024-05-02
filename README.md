@@ -785,3 +785,73 @@ RADIUS: Used in federated system to connect authorized systems and credendial da
 
 **Installation Considerations**
 
+- Site Surveys: Technical assesment of wireless networks. Looks for coverage, power, antena placement, network growth, etc.
+- Heat Maps: Prints of wireless networks and its info
+- Wifi Analyser: Shows networks and its information
+- Channel overlaps: Interference within overlaping channels can be caused by overuse
+- WAP placement: Only enough to provide adequate coverage to necessary regions
+- Controller and access point security: Don't use default password. Use dedicated AP controller to manage all the WAPs. Use proper application security with controller software.
+
+## 3.5 Secure Mobile Solutions, Connection Methods, and Receivers
+
+- Cellular: SIM card, 4G, 5G
+- Point-to-point: One device to another (bluetooth)
+- Point-to-multipoint: One device to many (CCTV cameras to HQ)
+
+**Mobile Device Management (MDM)**
+
+- App Management: restricts appstore use and app downloads
+- Content Management: Website restrictions and youtube content
+- Remote Wipe: Delete data on MDM device remotely in case of loss or theft
+- Geofencing: Restricts usage or alerts of out of boundry of accepted location
+- Geolocation: Find my device using GPS
+- Screen Locks: What you should have on rn
+- Push notifications: You know
+- Passwords, PINS, biometric, containerization
+- Context Aware Authentication: Loks at the IP, MAC address, user name to require more or less security authorization (Google Devices do this)
+- Storage Segmentation, FDE
+
+**Mobile Devices**
+
+- HSM: Uses microSD to provice encryption
+- UEM: Centralized control over endpoints
+- SEAndroid: Reports operations, proccesses, objects, etc.
+
+**Enforcement and Monitoring**
+
+- MDM should detect root access for rooting or jailbreaking and potential use of third party app stores.
+- Side loading: Installing app from APK file (not store APK)
+- Custome Firmware, Carrier Unlocking
+- OTA updates: cellular updates (use only wifi, USB or ethernet)
+- Camera use: Disable if you don't want leaks or privacy issues (same with audio recording)
+- MMS and RCS: Monitoring to ensure data plan is not being abused
+- External Media: Could be used to store all personall data or all company data
+- USB OTF: Device turns into host when plugged to computer. Disable to prevent file sharing
+- GPS tagging: Pictures have GPS locations on them
+- WIFI direct/ Ad-hoc: Using wifi to directly connect to another device (AirDrop). Ad Hoc is where multiple devices engage in wifi direct with each other.
+- Tethering: Sharing of mobile data via USB
+- Hotspot: Tethering via wifi
+- Payment Methods: If a digital wallet is installed, the device should be monitored
+
+**Deployment Models**
+
+- Bring Your Own Device (BYOD): Employee owned, corpo shared
+- Choose Your Own Device (CYOD): Corpo owned, employee shared
+- Corporation Owned Personally Enabled (COPE): Preapproved APps
+- Virtual Desktop Infastructure (VDI): Use virtual phone
+
+## 3.6 Cybersecurity solutions to the cloud
+
+**Cloud Security Controls**
+
+- High Availibility across zones: Make sure using, zones/ regions, that the data is accesible
+- Resource Policies: Permissions
+- Secret Management: Seperate database with passwords, tokens, etc.
+- Integration and auditing: Zones/ regions use intra
+- Storage: Permissions, encryption, replication, high availibility
+- Network: VPN, public, and private subnets, segmentation, VPC, DMZ
+- API inspections and integration
+- Compute: Security groups, Dynamic resource allocation, instance awareness (one app multiple instaces can cause lag), VPC endpoint (private IP to service you want in XaaS)
+- Container Security: OS, application and software containers
+
+**Solutions**
