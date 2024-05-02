@@ -855,3 +855,59 @@ RADIUS: Used in federated system to connect authorized systems and credendial da
 - Container Security: OS, application and software containers
 
 **Solutions**
+
+- Cloud Access Security Broker (CASB): API service security
+- App sec: Development and runtime security
+- Next Generation Secure Web Gateway (NGSWG): Between web app and services that the app uses.
+
+Do you need to segment networks and pay for each VPC firewall?
+
+## 3.7 Identity and Account Management Controls
+
+**Identity**
+
+- Identity Provider (IDP): Info that assures ID
+- Attributes: Details to discriminate against
+- Certification: PKI certs
+- Tokens: USB keys or software keys
+- SSH keys: RSA asymetric key pair for SSH
+- smart cards
+
+**Account Types**
+
+There are user accounts, shared and generic accounts (which you should never use for sec purposes), limited (AKA guest), and service (bot) accounts
+
+**Account Policies**
+
+- Complex, one time use history with passwords
+- Geofencing, geotaging devices which mab be hazardous if left outside trusted facility
+- Audit and administer appropriate policies to accounts
+- Establish time-based logins for work hours
+- Impossible travel time: User is detected to have access a device too far in too short time from previous access for it to be the same user
+- Risky Login: Odd IP location
+- Lockout or disable suspicious account or no longer in use
+
+## 3.8 Authentication and Authorization solutions
+
+**Authentication Management**
+
+- Password keys and vaults
+- Trusted Platform Module (TPM): Hardware trust
+- Hardware Security Module (HSM): Process cryptography
+- Knowledge based authentication (passwords, passphrase, etc.)
+
+**Authentication/ Authorization**
+
+- Extensible Authorization Protocol (EAP): Several collection of authorization methods
+- Challenge Handshake Authorization Protocol (CHAP): Machine requests for authorization, server responds with challenge, machine responds to the challenge with hashed password, and finally the server authorizes the machine if the hash is the same
+- Password Authorization Protocol (PAP): Plain text authorization
+- 802.1x: Port based access control method. Supports various authorization protocols. More of framework than protocol
+- RADIUS: UDP 1812
+- Single Sign-On (SSO): One account credentials for access to various parts of network
+- AML: Format of authorization using ID provider
+- TACAS+: RADIUS but encrypts everything, not just between host and client. TCP/ UDP 49
+- O Auth: No password reveal authorization
+- Open ID: Use other credentials (google sign in)
+- Kerberos: Grants tickets with time frame to authorize. Used in Active Directory
+
+**Access Control Schemes**
