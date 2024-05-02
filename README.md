@@ -911,3 +911,67 @@ There are user accounts, shared and generic accounts (which you should never use
 - Kerberos: Grants tickets with time frame to authorize. Used in Active Directory
 
 **Access Control Schemes**
+
+- Attribute Based Control (ABAC): Color, department, class, data type, etc. controls
+- Role Based: Sec group
+- Rule Based: Time, location
+- MAC Mandatory: Clearance level
+- DAC discretionary: creator priviledge
+- Conditional access: Allowing special exceptions to authorization due to conditions (usually dire infastructure failure). Accesibility
+- Priviledge Access Management (PAM): Limits the affects of a compromised priviledge account
+- Filesystem Permissions: DAC
+
+## 3.9 Implement Public Key Infastructure
+
+**PKI**
+
+- Key Management: Recovery Agent (recovers private key) and key escrow (3rd party storage)
+- Certificate Authority: Digicert, etc.
+- Intermediate CA
+- Registration Authority: verifies info
+- Certification Revocation List (CRL): Self explanitory
+- Certification Attributes: Public key, info, valid dates, etc.
+- Online Certification Status Protocol (OCSP): Automatically validates certification in browser
+- Certificate Signing Request (CSR): Request to have CA isue a cert for domain
+- Cananical Name (CNAME): Essentially the domain name
+- Subject Alternative Names (SAN): Enable certs that support more than one specific domain name (CNAME)
+- Expiration: To avoid domains from being verified to new owners from previous owners
+
+**Types of certificates**
+
+- Wildcard: Apply to entire domain (help.domain)
+- SAN
+- Code signing: to verify code integrity
+- self-signed: not signed by CA. Just trust source
+- machine/ computer: To verify machine is part of net
+- Email: S/NIME
+- User: when encrypting files
+- Root: Top level certificate authority (based on context) DV, EV, and intermediate
+
+**Certificate Formats**
+- Distinguished Encoding Rules (DER): Storage of cert in binary form (.cert and .der)
+- Privacy Enhanced Mail (PEM): Like DER but Base 64 instead of binary
+- Personal Information Exchange (PFX): Encrypts all data (.P12)
+- .P7B: Format that only contains certs and cert chains
+
+**Concepts**
+
+Online vs offline. Typically sub CAs stay on all the time and root CAs only go online to add new sub CAs
+
+PKI TLS Scenario:
+
+1) TLS Handshake and web server sends entire cert chain
+2) Browser checks down cert chain
+3) Check CRL list and OCSP
+4) Stapling (Premade OCSP response wiht every cert in chain)
+5) If cert is accepted, TLS handshake continues
+
+- HTTP Public Key Pinning (HPKP): Compares public key hashes to previous known to verity same cert is used as last time
+- Trust models: Hierarchial, cross (intermediate) and web-of-trust (none)
+
+In cert chains, digital signatures are used to verify the previous authority actually issued the cert.
+
+# 4 OPERATIONS AND INCIDENT RESPONCE
+
+## 4.1 Tools to Asses Organizational Security
+
