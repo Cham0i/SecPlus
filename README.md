@@ -975,3 +975,124 @@ In cert chains, digital signatures are used to verify the previous authority act
 
 ## 4.1 Tools to Asses Organizational Security
 
+**Network Reconnaissance and discovery**
+
+- tracert/ traceroute: A series of pings that traces the routers between your network and the target network
+- nslookup/dig: Looks up the IP addresses associated with a domain name
+- ipconfig/ifconfig: Displays your device's IP, subnetmask, default gateway, MAC address, etc.
+- nmap: Scans the entire network
+- ping/ pathping: Sends ping to ip
+- hping: ping but with more options. Ping can be to a specific port using protocols other than IMCP
+- netstat:
+- netcat:
+- IP scanners:
+- arp:
+- route:
+- curl: outputs source code of website
+- theHarvester: OSINT tool
+- sn1per: does everything
+- scanless: Performs scan from proxy website
+- dnsenum: Gathers information on domain
+- Nessus: A famous vulnerability scanner
+- Cuckoo: Open source sandbox enviroment to analyze malware
+
+**File Manipulation**
+
+- head: prints the first 10 lines of file
+- tail: prints the last 10 lines of a file
+- cat: Short for concatenate. It copies a file into another file or merges two file into another file.
+- grep: searches for string within file
+- chmod: Used to change the permissions of a file
+- logger: Adds a log
+
+**Shell and Script Enviroments**
+
+- SSH, PowerShell, Python are all used to command computers to do things. You can write PowerShell or Python scripts to automate certain tasks. OpenSSL is used to create one's own certificate used in web encryption.
+
+**Packet Capture and Replay**
+
+- TCpreplay:
+- Tcpdump: A terminal app used to view network traffic
+- Wireshark: A GUI app used to view network traffic
+
+**Forensics**
+
+- dd: Creates a bit-by-bit copy of a drive. 
+- Memdump: Copies information of system memory to the standard output stream
+- WinHex: A windows universal hexadecimal editor. Does many things 
+- FTX Imager: 
+- Autopsy: Performs forensics and identifies bits as images, videos, docs, emails, cookies, etc.
+
+Exploitation frameworks
+
+Metasploit and Social Engineer Toolkit (SET)
+
+Password crackers
+
+Online is attempting different usernames and password combinations live. A offline compares the attack to a hash file.
+
+Data sanitization
+
+acid wash your server. Ahem Hillary
+
+## 4.2 Policies, Processes, and Procedures for Incident Response
+
+Incident Response plans
+
+Incident Response process
+- Preparation:
+- Identification:
+- Containment:
+- Eradication:
+- Recovery:
+- Lessons Learned:
+
+**Exercises**
+
+- Tabletop:
+- Walkthroughs:
+- Simulations:
+
+**Attack Frameworks**
+- MITRE ATT$CK:
+- The Diamond Model of Intrusion Analysis:
+- Lockheed Martin Cyber Kill Chain:
+
+  Stakeholder management
+
+  communications plan
+
+  disaster recovery plan
+
+  busines continuity plan
+
+  continuity of operations planning (COOP)
+
+  Incident Response Team
+
+  Retention policies
+
+  ## 4.3 Utilize Appropriate Data Sources to Support an Investigation
+
+  Vulnerability scan output
+
+  SIEM dashboards
+
+  - Sensor:
+  - Sensitivity:
+  - Trends:
+  - Alerts:
+  - Correlation:
+ 
+  **Log Files**
+
+  - Network:
+  - System:
+  - Application:
+  - Security:
+  - Web:
+  - DNS:
+  - Authentication:
+  - Dump Files
+  - VOIP and call managers:
+  - Session Initiation Protocol (SIP) traffic
