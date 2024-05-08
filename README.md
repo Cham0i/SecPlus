@@ -1049,28 +1049,31 @@ Incident Response process
 
 **Exercises**
 
-- Tabletop:
-- Walkthroughs:
-- Simulations:
+- Tabletop: Thing of it like tabletop RPGs. People talk over situations and talk behind the logistics and the actions to deal with them.
+- Walkthroughs: Physically applies the discussions of a tabletop exercise.
+- Simulations: Testing hacks, often done without the prior knowledge of the victims. 
 
 **Attack Frameworks**
-- MITRE ATT$CK:
-- The Diamond Model of Intrusion Analysis:
-- Lockheed Martin Cyber Kill Chain:
+- [MITRE ATT$CK](http://attack.mitre.org/): A collection of information on common technological attacks and ways to detect and mitigate them. Designed by the MITRE corporation.  
+- The Diamond Model of Intrusion Analysis: A model to understand a security event by identifying the adversary, victim, capability, and infrastructure. The model further analyses how the adversary uses an infastructure to connect to the victim and how it develops a capability to exploit the victim.
 
-  Stakeholder management
+![alt text]()
 
-  communications plan
+- Cyber Kill Chain: Seven phases of a cyber attack developed by Lockheed Martin and the U.S military. Often used to explain backdoors.
+  1) Reconnaissance. Building intel
+  2) Weaponization. Building a payload
+  3) Delivery. Sending the payload
+  4) Exploit. Executing the payload
+  5) Installation. Installing the payload
+  6) Command and Control (C2). Hacker has control over device
+  7) Actions on Objectives. Using the device to carry out other objectives
 
-  disaster recovery plan
-
-  busines continuity plan
-
-  continuity of operations planning (COOP)
-
-  Incident Response Team
-
-  Retention policies
+- Stakeholders management is crucial to keeping your stakeholders happy. Keep them in the loop of any potential security concerns and the ways the business is prepared to handle them. Give frequent updates if there are any ongoing security threats. 
+- Have a good communications plan by having contacts with HR, public affairs, legal department, corporate management, head of Information Security, law enforcement, etc. 
+- A disaster recovery plan ensures the business continues its operations in case of natural disasters, technology failures, etc.
+- Continuity of operations planning (COOP) is an alternative plan to your current way of conducting business that is often technology independant. This means manually computing numbers for accounting, using paper receipts, manual transactions, phone calls for transaction communications, etc.
+- The Incident Response Team is the personnel responsible for dealing with on going security threats. Kind of like emergency exit fliers, or floor fire guards; this isn't the main job for these people, but they are responsible for coming together and resolving events if the need arises.
+- Ensuring good Retention Policies are in place provides the business with redundancy in case their data is inaccessible. Having a law complicit backup also ensure that PII, PHI, etc data isn't lost and is disposed of properly.
 
   ## 4.3 Utilize Appropriate Data Sources to Support an Investigation
 
